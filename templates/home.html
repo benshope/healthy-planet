@@ -1,0 +1,213 @@
+{% extends base_layout %}
+
+{% block header_title_lead %}{% endblock %}
+
+{% block content %}
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="/img/examples/slide-01.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Example headline.</h1>
+              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <a class="btn btn-large btn-primary" href="#">Sign up today</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="/img/examples/slide-02.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Another example headline.</h1>
+              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <a class="btn btn-large btn-primary" href="#">Learn more</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="/img/examples/slide-03.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>One more for good measure.</h1>
+              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <a class="btn btn-large btn-primary" href="#">Browse gallery</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div><!-- /.carousel -->
+
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="span4">
+          <img class="img-circle" data-src="holder.js/140x140">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+          <p><a class="btn" href="#">View details &raquo;</a></p>
+        </div><!-- /.span4 -->
+        <div class="span4">
+          <img class="img-circle" data-src="holder.js/140x140">
+          <h2>Heading</h2>
+          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn" href="#">View details &raquo;</a></p>
+        </div><!-- /.span4 -->
+        <div class="span4">
+          <img class="img-circle" data-src="holder.js/140x140">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn" href="#">View details &raquo;</a></p>
+        </div><!-- /.span4 -->
+      </div><!-- /.row -->
+
+
+
+    {% if user_id %}
+
+    <div class="hero-unit home_bp">
+        <h1>
+            Google App Engine Boilerplate
+        </h1>
+        <p>
+            {% trans %}Congratulations on your Google App Engine Boilerplate powered page.{% endtrans %}
+            <br><a href="http://github.com/coto/gae-boilerplate/blob/master/README.md" target="_blank">
+            {% trans %}Learn why this Boilerplate Rocks{% endtrans %}</a> {% trans %}or just{% endtrans %}
+            <a href="http://github.com/coto/gae-boilerplate/" target="_blank">{% trans %}download the Source Code{% endtrans %}</a>
+            {% trans %}to help you to create your application.{% endtrans %}
+        </p>
+    </div>
+    {% else %}
+    <div class="row">
+        <div class="span9">
+            <div class="home_bp">
+                <h1>
+                    Google App Engine Boilerplate
+                </h1>
+                <p>
+                    {% trans %}Congratulations on your Google App Engine Boilerplate powered page.{% endtrans %}
+                    <br><a href="http://github.com/coto/gae-boilerplate/blob/master/README.md" target="_blank">
+                    {% trans %}Learn why this Boilerplate Rocks{% endtrans %}</a> {% trans %}or just{% endtrans %}
+                    <a href="http://github.com/coto/gae-boilerplate/" target="_blank">{% trans %}download the Source Code{% endtrans %}</a>
+                    {% trans %}to help you to create your application.{% endtrans %}
+                </p>
+            </div>
+        </div>
+        <div class="span3 auth-at-home">
+            <form id="form_login_user" action="{{ uri_for("login") }}" method="post">
+                <fieldset class="well">
+                    <input type="hidden" name="_csrf_token" value="{{ csrf_token() }}">
+                    <div class="control-group">
+                        <label class="controls">
+                            <input class="focused required" name="username" id="l_username" type="text" placeholder="{% trans %}Username or Email{% endtrans %}">
+                        </label>
+                    </div>
+                    <div class="control-group">
+                        <div class="controls row-fluid">
+                            <label class="span8">
+                                <input class="focused required" name="password" id="l_password" type="password" placeholder="{% trans %}Password{% endtrans %}">
+                            </label>
+                            <label class="span4">
+                                <button type="submit" class="btn btn-primary btn-login">{% trans %}Login{% endtrans %}</button>
+                            </label>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="checkbox">
+                            <input type="checkbox" name="remember_me" id="remember_me" value="on">
+                            {% trans %}Remember me?{% endtrans %} <span class="separator"></span>
+                            <a href="{{ uri_for("password-reset") }}">{% trans %}Forgot your password?{% endtrans %}</a>
+                        </label>
+                    </div>
+                    {{ macros.federated_login(provider_info, provider_uris, enable_federated_login) }}
+                </fieldset>
+            </form>
+
+            <h3>{% trans %}Sign Up{% endtrans %}</h3>
+            <form id="form_register" action="{{ uri_for("register") }}" method="post">
+                <fieldset class="well">
+                    <input type="hidden" name="_csrf_token" value="{{ csrf_token() }}">
+                    <div class="control-group">
+                        <label class="controls">
+                            <input class="focused required" name="username" id="username" type="text" placeholder="{% trans %}Username{% endtrans %}">
+                        </label>
+                    </div>
+                    <div class="control-group">
+                        <label class="controls">
+                            <input class="focused required email" name="email" id="email" type="email" placeholder="{% trans %}Email{% endtrans %}">
+                            <input type="hidden" name="country" value="">
+                        </label>
+                    </div>
+                    <div class="control-group">
+                        <label class="controls">
+                            <input class="focused required" name="password" id="password" type="password" placeholder="{% trans %}Password{% endtrans %}">
+                        </label>
+                    </div>
+                    <div class="control-group">
+                        <label class="controls">
+                            <input class="focused required" name="c_password" id="c_password" type="password" placeholder="{% trans %}Confirm Password{% endtrans %}">
+                        </label>
+                    </div>
+                    <div class="control-group">
+                        <button type="submit" class="btn btn-primary">{% trans %}Sign Up{% endtrans %}</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div><!-- /row -->
+    {% endif %}
+
+{% endblock %}
+
+{% block mediaJS %}
+    <script type="text/javascript">
+        $().ready(function() {
+            $("#form_login_user").validate({
+                submitHandler: function(form) {
+                    form.submit();
+                },
+                errorPlacement: function(error, element) {
+                    element.parent().parent().addClass("error");
+                    error.addClass("help-inline").appendTo( element.parent() );
+                }
+            });
+
+            $("#form_register").validate({
+                submitHandler: function(form) {
+                    form.submit();
+                },
+                rules: {
+                    password: 'required',
+                    c_password: {
+                        required: true,
+                        equalTo: '#password'
+                    }
+                },
+                errorPlacement: function(error, element) {
+                    element.parent().parent().addClass("error");
+                    error.addClass("help-inline").appendTo( element.parent() );
+                }
+            });
+
+            $("#password").passStrength({
+                shortPassText: '{% trans %}Short Password{% endtrans %}',
+                badPassText: '{% trans %}Insecure Password{% endtrans %}',
+                goodPassText: '{% trans %}Good Password{% endtrans %}',
+                strongPassText: '{% trans %}Secure Password{% endtrans %}'
+            });
+        });
+    </script>
+{% endblock %}
+
