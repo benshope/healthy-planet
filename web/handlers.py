@@ -13,7 +13,6 @@ from boilerplate import models
 from boilerplate.lib.basehandler import BaseHandler
 from boilerplate.lib.basehandler import user_required
 
-
 class SecureRequestHandler(BaseHandler):
     """
     Only accessible to users that are logged in
@@ -39,3 +38,18 @@ class SecureRequestHandler(BaseHandler):
             return self.render_template('secure_zone.html', **params)
         except (AttributeError, KeyError), e:
             return "Secure zone error:" + " %s." % e
+
+
+class AboutHandler(BaseHandler):
+    """
+    Handler for the About Page
+    """
+
+    def get(self):
+        """ Returns a simple HTML for contact form """
+
+        params = {
+            "exception" : self.request.get('exception')
+            }
+
+        return self.render_template('about.html', **params)

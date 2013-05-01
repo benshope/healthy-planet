@@ -27,8 +27,8 @@ config = {
 'captcha_private_key' : "PUT_YOUR_RECAPCHA_PRIVATE_KEY_HERE",
 
 # Leave blank "google_analytics_domain" if you only want Analytics code
-'google_analytics_domain' : "YOUR_PRIMARY_DOMAIN (e.g. google.com)",
-'google_analytics_code' : "UA-XXXXX-X",
+'google_analytics_domain' : "geneticmemorial.com",
+'google_analytics_code' : "UA-40321962-1",
 
 # add status codes and templates used to catch and display errors
 # if a status code is not listed here it will use the default app engine
@@ -41,7 +41,7 @@ config = {
 
 # Enable Federated login (OpenID and OAuth)
 # Google App Engine Settings must be set to Authentication Options: Federated Login
-'enable_federated_login' : True,
+'enable_federated_login' : False,
 
 # jinja2 base layout template
 'base_layout' : 'base.html',

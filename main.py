@@ -13,8 +13,8 @@
 # limitations under the License.
 #
 
-__author__  = 'Rodrigo Augosto (@coto)'
-__website__ = 'www.beecoss.com'
+__author__  = 'Genetic Memorial'
+__website__ = 'www.geneticmemorial.com'
 
 import os, sys
 # Third party libraries path must be fixed before importing webapp2
