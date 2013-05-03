@@ -46,7 +46,7 @@ def deploy(app_id="genetic-memorial", version="2-2"):
 def save(m="Update app"):
     """ save the to github """
     local("git add .")
-    local("git commit -m {0}".format(m))
+    local("git commit -m '{0}'".format(m))
     local("git push")
 
 def test(os="mac"):
