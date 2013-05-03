@@ -36,33 +36,16 @@ def lang(mode="extract"):
         local("pybabel update -l pt_BR -d ./locale -i ./locale/messages.pot --previous --ignore-obsolete")
 
 def start(mode="normal"):
-    """
-        HOW TO RUN:
+    """ start the local app server """
+    local("dev_appserver.py .")
 
-            option 1) fab start
-            option 2) fab start:clear
+def deploy(app_id="genetic-memorial", version="2-2"):
+    """ upload the app """
+    local("appcfg.py --oauth2 update .")
 
-    """
-
-    if mode == "clear":
-        local("dev_appserver.py . -p 8080 -a 0.0.0.0 --clear_datastore")
-    else:
-        local("dev_appserver.py . -p 8080 -a 0.0.0.0")
-
-def deploy(app_id="sandengine", version="2-2"):
-    """
-        app.yaml never has to be version:default
-
-        HOW TO RUN:
-
-            option 1) fab deploy
-            option 2) fab deploy:preview
-            option 3) fab deploy:prod
-            option 4) fab deploy:homo
-
-    """
-
-    local("appcfg.py --no_cookies --oauth2 -A {0} -V {1} update .".format(app_id, version))
+def save():
+    """ save the to github """
+    local("git add . && git commit && git push")
 
 def test(os="mac"):
     """

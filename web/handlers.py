@@ -41,15 +41,10 @@ class SecureRequestHandler(BaseHandler):
 
 
 class AboutHandler(BaseHandler):
-    """
-    Handler for the About Page
-    """
-
     def get(self):
-        """ Returns a simple HTML for contact form """
+        return self.render_template('about.html', **{})
 
-        params = {
-            "exception" : self.request.get('exception')
-            }
 
-        return self.render_template('about.html', **params)
+class FaqHandler(BaseHandler):
+    def get(self):
+        return self.render_template('about.html', **{})
