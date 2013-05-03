@@ -43,7 +43,7 @@ def deploy(app_id="genetic-memorial", version="2-2"):
     """ upload the app """
     local("appcfg.py --oauth2 update .")
 
-def save(m="Update app"):
+def save(m="Auto-update the app"):
     """ save the to github """
     local("git add .")
     local("git commit -m '{0}'".format(m))
