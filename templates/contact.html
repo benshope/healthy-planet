@@ -8,6 +8,8 @@
 {% endblock %}
 
 {% block content %}
+
+<div class="content">
     <form id="form_contact" action="{{ url|safe }}" method="post" class="well form-horizontal">
         <fieldset>
             <input type="hidden" name="exception" value="{{ exception }}">
@@ -20,6 +22,8 @@
             </div>
         </fieldset>
     </form>
+</div>
+
 {% endblock %}
 
 {% block mediaJS %}
