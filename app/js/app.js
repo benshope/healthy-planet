@@ -4,6 +4,7 @@ angular.module('myApp', ['myApp.filters', 'myApp.services', 'myApp.directives', 
   config(['$routeProvider', function($routeProvider) {
     $routeProvider.when('/', {templateUrl: 'partials/home.html', controller: HomeCtrl});
     $routeProvider.otherwise({redirectTo: '/'});
+    $locationProvider.html5Mode(true);
 }])
 .run(function($rootScope, $location, $anchorScroll, $routeParams) {
   $rootScope.$on('$routeChangeSuccess', function(newRoute, oldRoute) {
