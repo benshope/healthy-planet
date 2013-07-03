@@ -1,0 +1,219 @@
+[
+    {
+        "name": "apple",
+        "imageUrl": "img/logos/apple.jpg",
+        "snippet": "Cool company",
+        "data": [40,60]
+    },
+    {
+        "name": "google",
+        "imageUrl": "img/logos/google.jpg",
+        "snippet": "Cool company",
+        "data": [20,80]
+    },
+    {
+        "name": "twitter",
+        "imageUrl": "img/logos/twitter.jpg",
+        "snippet": "Cool company",
+        "data": [30,70]
+    },
+    {
+        "name": "ebay",
+        "imageUrl": "img/logos/ebay.jpg",
+        "snippet": "Cool company",
+        "data": [0,100]
+    },
+    {
+        "name": "vimeo",
+        "imageUrl": "img/logos/vimeo.jpg",
+        "snippet": "Cool company",
+        "data": [20,80]
+    },
+    {
+        "name": "pinterest",
+        "imageUrl": "img/logos/pinterest.jpg",
+        "snippet": "Cool company",
+        "data": [5,95]
+    },
+    {
+        "name": "skype",
+        "imageUrl": "img/logos/skype.jpg",
+        "snippet": "Cool company",
+        "data": [20,80]
+    },
+    {
+        "name": "facebook",
+        "imageUrl": "img/logos/facebook.jpg",
+        "snippet": "Cool company",
+        "data": [25,75]
+    },
+    {
+        "name": "yahoo",
+        "imageUrl": "img/logos/yahoo.jpg",
+        "snippet": "Cool company",
+        "data": [60,40]
+    },
+    {
+        "name": "apple",
+        "imageUrl": "img/logos/apple.jpg",
+        "snippet": "Cool company",
+        "data": [40,60]
+    },
+    {
+        "name": "google",
+        "imageUrl": "img/logos/google.jpg",
+        "snippet": "Cool company",
+        "data": [20,80]
+    },
+    {
+        "name": "twitter",
+        "imageUrl": "img/logos/twitter.jpg",
+        "snippet": "Cool company",
+        "data": [30,70]
+    },
+    {
+        "name": "ebay",
+        "imageUrl": "img/logos/ebay.jpg",
+        "snippet": "Cool company",
+        "data": [0,100]
+    },
+    {
+        "name": "vimeo",
+        "imageUrl": "img/logos/vimeo.jpg",
+        "snippet": "Cool company",
+        "data": [20,80]
+    },
+    {
+        "name": "pinterest",
+        "imageUrl": "img/logos/pinterest.jpg",
+        "snippet": "Cool company",
+        "data": [5,95]
+    },
+    {
+        "name": "skype",
+        "imageUrl": "img/logos/skype.jpg",
+        "snippet": "Cool company",
+        "data": [20,80]
+    },
+    {
+        "name": "facebook",
+        "imageUrl": "img/logos/facebook.jpg",
+        "snippet": "Cool company",
+        "data": [25,75]
+    },
+    {
+        "name": "yahoo",
+        "imageUrl": "img/logos/yahoo.jpg",
+        "snippet": "Cool company",
+        "data": [60,40]
+    },
+        {
+        "name": "apple",
+        "imageUrl": "img/logos/apple.jpg",
+        "snippet": "Cool company",
+        "data": [40,60]
+    },
+    {
+        "name": "google",
+        "imageUrl": "img/logos/google.jpg",
+        "snippet": "Cool company",
+        "data": [20,80]
+    },
+    {
+        "name": "twitter",
+        "imageUrl": "img/logos/twitter.jpg",
+        "snippet": "Cool company",
+        "data": [30,70]
+    },
+    {
+        "name": "ebay",
+        "imageUrl": "img/logos/ebay.jpg",
+        "snippet": "Cool company",
+        "data": [0,100]
+    },
+    {
+        "name": "vimeo",
+        "imageUrl": "img/logos/vimeo.jpg",
+        "snippet": "Cool company",
+        "data": [20,80]
+    },
+    {
+        "name": "pinterest",
+        "imageUrl": "img/logos/pinterest.jpg",
+        "snippet": "Cool company",
+        "data": [5,95]
+    },
+    {
+        "name": "skype",
+        "imageUrl": "img/logos/skype.jpg",
+        "snippet": "Cool company",
+        "data": [20,80]
+    },
+    {
+        "name": "facebook",
+        "imageUrl": "img/logos/facebook.jpg",
+        "snippet": "Cool company",
+        "data": [25,75]
+    },
+    {
+        "name": "yahoo",
+        "imageUrl": "img/logos/yahoo.jpg",
+        "snippet": "Cool company",
+        "data": [60,40]
+    },
+    {
+        "name": "apple",
+        "imageUrl": "img/logos/apple.jpg",
+        "snippet": "Cool company",
+        "data": [40,60]
+    },
+    {
+        "name": "google",
+        "imageUrl": "img/logos/google.jpg",
+        "snippet": "Cool company",
+        "data": [20,80]
+    },
+    {
+        "name": "twitter",
+        "imageUrl": "img/logos/twitter.jpg",
+        "snippet": "Cool company",
+        "data": [30,70]
+    },
+    {
+        "name": "ebay",
+        "imageUrl": "img/logos/ebay.jpg",
+        "snippet": "Cool company",
+        "data": [0,100]
+    },
+    {
+        "name": "vimeo",
+        "imageUrl": "img/logos/vimeo.jpg",
+        "snippet": "Cool company",
+        "data": [20,80]
+    },
+    {
+        "name": "pinterest",
+        "imageUrl": "img/logos/pinterest.jpg",
+        "snippet": "Cool company",
+        "data": [5,95]
+    },
+    {
+        "name": "skype",
+        "imageUrl": "img/logos/skype.jpg",
+        "snippet": "Cool company",
+        "data": [20,80]
+    },
+    {
+        "name": "facebook",
+        "imageUrl": "img/logos/facebook.jpg",
+        "snippet": "Cool company",
+        "data": [25,75]
+    },
+    {
+        "name": "yahoo",
+        "imageUrl": "img/logos/yahoo.jpg",
+        "snippet": "Cool company",
+        "data": [60,40]
+    }
+
+]
