@@ -1,39 +1,16 @@
-<div id="myCarousel" class="carousel slide">
-  <div class="carousel-inner">
-    <div class="item">
-      <img src="img/slide1.jpg" alt="">
-      <div class="container">
-        <div class="carousel-caption">
-          <h1>Genetic Memorial.</h1>
-          <p class="lead">Saving genetic material preserves historical and medical information for the benefit of future generations.  A genetic memorial is a gift of memory.</p>
-          <a class="btn btn-large btn-primary" href="#">Sign up today</a>
-        </div>
+
+<carousel interval="interval">
+  <slide ng-repeat="slide in slides" active="slide.active">
+    <img ng-src="{{slide.image}}" style="margin:auto;">
+    <div class="container">
+      <div class="carousel-caption">
+        <h4>{{slide.title}}</h4>
+        <p class="lead">{{slide.text}}</p>
+        <a class="btn btn-large btn-primary" href="#">Button</a>
       </div>
     </div>
-    <div class="item active left">
-      <img src="img/slide2.jpg" alt="">
-      <div class="container">
-        <div class="carousel-caption">
-          <h1>Our Technology.</h1>
-          <p class="lead">The DNA sequence of the human genome would fill 200 volumes the size of a Manhattan telephone book.  We know how to keep that information safe.</p>
-          <a class="btn btn-large btn-primary" href="#">Learn more</a>
-        </div>
-      </div>
-    </div>
-    <div class="item next left">
-      <img src="img/slide3.jpg" alt="">
-      <div class="container">
-        <div class="carousel-caption">
-          <h1>Why A Memorial.</h1>
-          <p class="lead">A genetic memorial provides individuals with the peace of mind that comes from knowing that their information is stored in a safe and highly secured environment.</p>
-          <a class="btn btn-large btn-primary" href="#">Browse gallery</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
-  <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
-</div>
+  </slide>
+</carousel>
 
 <div class="container">
   <div class="row-fluid">
