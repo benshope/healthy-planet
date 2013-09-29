@@ -25,11 +25,7 @@ define('DB_USER', 'wp_user');
 define('DB_PASSWORD', 'wp_password');
 
 /** MySQL hostname */
-if(isset($_SERVER['SERVER_SOFTWARE']) && strpos($_SERVER['SERVER_SOFTWARE'],'Google App Engine') !== false) {
-  define('DB_HOST', ':/cloudsql/YOUR_PROJECT_ID:wordpress');
-}else{
-  define('DB_HOST', 'localhost');
-}
+define('DB_HOST', 'localhost');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
@@ -46,14 +42,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'put your unique phrase here');
-define('SECURE_AUTH_KEY',  'put your unique phrase here');
-define('LOGGED_IN_KEY',    'put your unique phrase here');
-define('NONCE_KEY',        'put your unique phrase here');
-define('AUTH_SALT',        'put your unique phrase here');
-define('SECURE_AUTH_SALT', 'put your unique phrase here');
-define('LOGGED_IN_SALT',   'put your unique phrase here');
-define('NONCE_SALT',       'put your unique phrase here');
+define('AUTH_KEY',         'vl5}Csp([3`/(e:|SO>|k3Qg@)!m@hDR9aA{(NFx$YF+sTm}/:^uL>K_m+I1oaTX');
+define('SECURE_AUTH_KEY',  'j|F0i-al|h;% S&nmEZZb~J:-.1<Ar?ZK-$w|/pZdom+&~ 2_xr2<xgqha.W+,ZO');
+define('LOGGED_IN_KEY',    'M&kH#qHd%Cz]J@aHm[GFYEUbJNRV;I$c=o83l^r{]: mtO0))?tj2DtdH90-OX!4');
+define('NONCE_KEY',        'JU4Ig6|yz#r}O&l>Injr_i`aNS4lA|`Z*+@`FAJq|AGqE.^_Z9P%2C<|,epclB:9');
+define('AUTH_SALT',        'm]y]x2YmlG=!8qL.#v?v(lj+mF4%kMn-A<Q~Uae~aqO} =3.d,ee ^`U|wvd<*4?');
+define('SECURE_AUTH_SALT', 'FCc82m@V,Uv,1rj%t9+sC5?;GYWbx9aQ8`}5 :$MspuAp}Y,D+sb=#rC?DWNo4Pf');
+define('LOGGED_IN_SALT',   '+y6tOKN95_6*~D1=h51WR$qG^:Y*sT^w:6|@tw:cY:qxJQ?Ay2G C~Y<S?uNc%gN');
+define('NONCE_SALT',       'FLe$NyHq||uU2(.JSDGeJB,f4ouQS}(K[MBu-dN-<fMw>-K&Kd;AD=[0*qP5o9!1');
 
 /**#@-*/
 
@@ -88,7 +84,7 @@ define('WP_DEBUG', false);
 
 /** Absolute path to the WordPress directory. */
 if ( !defined('ABSPATH') )
-    define('ABSPATH', dirname(__FILE__) . '/');
+	define('ABSPATH', dirname(__FILE__) . '/');
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
