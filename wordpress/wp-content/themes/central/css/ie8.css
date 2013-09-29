@@ -1,0 +1,99 @@
+.price_table{
+	width: 32.8%;
+	margin: 0px 0.5% 40px 0px;
+}
+
+.blog_holder_inner .mix .image img{
+	width: auto;
+}
+
+/* Second size from responsive.css - start */
+
+	nav.main_menu ul li a{
+		padding: 0px 20px;
+	}
+
+	body.boxed .wrapper,
+	body.boxed header{
+		width: 848px;
+	}
+	
+	.container_inner,
+	.drop_down2 .second,
+	.drop_down2 .second .inner2,
+	.accordion.full_screen.no .accordion_inner{
+		width: 768px;
+	}
+
+	.accordion.full_screen.yes .accordion_inner,
+	.top_area_line_holder.yes .top_area_line{
+		width: 768px !important;
+	}
+
+	.accordion.full_screen.yes .accordion_inner,
+	.top_area_line_holder.yes .top_area_line{
+		margin: 0px auto !important;
+	}
+
+	.top_area_line_holder.yes .top_area_line .top_area_line_text_holder{
+		padding: 0px;
+	}
+
+	.projects_holder.v4 .mix,
+	.blog_holder_inner .mix{
+		margin: 0 0 2.8%;
+		width: 31.5%;
+	}
+
+	.projects_holder.v4 .filler,
+	.blog_holder_inner .filler{
+		width: 31.5%;
+	}
+	
+	.projects_holder.v3 .mix{
+		margin: 0 0 4%;
+		width: 48%;
+	}
+
+	.projects_holder.v3 .filler {
+		width: 48%;
+	}
+
+	.latest_post_holder ul li.five{
+		width: 32.9%;
+		padding: 0px 0.4% 0px 0px;
+	}
+
+	.portfolio_galery a.v2{
+		width: 49.5%;
+		margin: 0px 0.5% 10px 0px;
+	}
+
+	.portfolio_galery a.v3{
+		width: 33%;
+		margin: 0px 0.33% 10px 0px;
+	}
+
+	.portfolio_galery a.v4{
+		width: 24.5%;
+		margin: 0px 0.25% 10px 0px;
+	}
+	
+/* Second size from responsive.css - start */
+
+	.header_right_widget #lang_sel ul > li a.lang_sel_sel, .header_right_widget #lang_sel_click ul > li a.lang_sel_sel{
+		display:inline-block;
+		float:left;
+		white-space:nowrap;
+		padding-right:35px;
+		padding-left:28px;
+	
+	}
+	.header_right_widget #lang_sel_list ul > li a{
+		display:inline;
+		white-space:nowrap;
+		padding-right:5px;
+	}
+	.header_right_widget #lang_sel ul li ul li a{
+		padding-right:26px;
+	}
