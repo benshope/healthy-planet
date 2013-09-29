@@ -38,3 +38,7 @@ Vagrantfile
 
 # node stuff
 node_modules
+
+
+# security things
+wordpress/wp-config.php

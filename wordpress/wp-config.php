@@ -25,7 +25,11 @@ define('DB_USER', 'wp_user');
 define('DB_PASSWORD', 'wp_password');
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+if(isset($_SERVER['SERVER_SOFTWARE']) && strpos($_SERVER['SERVER_SOFTWARE'],'Google App Engine') !== false) {
+  define('DB_HOST', ':/cloudsql/healthy-planet-compute:healthy-planet-cloud-sql');
+}else{
+  define('DB_HOST', 'localhost');
+}
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
