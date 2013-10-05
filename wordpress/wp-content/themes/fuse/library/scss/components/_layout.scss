@@ -1,0 +1,224 @@
+.wrapper {
+	@include rem(padding, 0 72px);
+
+	@include media(to lap) {
+		@include rem(padding, 0 48px);
+	}
+
+	@include media(to hand) {
+		@include rem(padding, 0 24px);
+	}
+}
+
+.unwrap {
+	@include rem(margin, 0 -72px);
+
+	@include media(to lap) {
+		@include rem(margin, 0 -48px);
+	}
+
+	@include media(to hand) {
+		@include rem(margin, 0 -24px);
+	}
+}
+
+.lt-ie9 {
+	.row {
+		width: 100%;
+		display: table;
+
+		[class*="span"] {
+			display: table-cell;
+			vertical-align: top;
+			float: none;
+			border-left-width: 0;
+		}
+	}	
+}
+
+@include media(from lap) {
+	.row {
+		width: 100%;
+		table-layout:fixed;
+		display: table;
+
+		[class*="span"] {
+			display: table-cell;
+			vertical-align: top;
+			float: none;
+			border-left-width: 0;
+		}
+	}
+}
+
+.row .row {
+	@extend %clearfix;
+	display: block;
+	width: auto;
+	@include rem(margin-left, -1 * $gridGutter);
+
+	[class*="span"] {
+		display: inline-block;
+		float: left;
+		@include rem(border-left-width, $gridGutter);
+	}
+
+	.block-inner {
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+}
+
+@include media(to hand) {
+	.row .row {
+		margin-left: 0;
+	}
+
+	%span {
+		width: 100%;
+		display: block !important;
+		float: none !important;
+		border-left-width: 0 !important;
+	}
+}
+
+.no-padding .row {
+	margin-left: 0 !important;
+
+	[class*="span"] {
+		border-left-width: 0 !important;
+	}
+}
+
+[class*="span"] {
+
+	&:first-child .block-inner {
+		@extend .block-inner_first;
+	}
+
+	&:last-child .block-inner {
+		@extend .block-inner_last;
+	}
+}
+
+.main, .side, .block {
+
+	@include media(to hand) {
+		display: block;
+		width: 100%;
+	}
+
+	display: table-cell;
+	vertical-align: top;
+	float: none;
+	border-left: 0;
+}
+
+.wrapper-content {
+	//table-layout:fixed;
+}
+.main, .block2 {
+	@extend .span8;
+}
+
+.side, .block1 {
+	@extend .span4;
+}
+
+.block {
+	@include background-size(cover);
+	background-position: center;
+}
+
+@include media(from lap) {
+	
+	.no-padding .block-inner {
+		padding: 0 !important;
+	}
+
+	.no-padding-lr .block-inner {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+}
+
+.block-text {
+	@include rem(padding-top, 48px);
+	@include rem(padding-bottom, 48px);
+}
+
+.block-spn {
+	position: absolute;
+	top: 0; bottom: 0;
+}
+
+.block-inner {
+	@extend %clearfix;
+	position: relative;
+	@include rem(padding, 24px 36px);
+
+	@include media(to lap) {
+		@include rem(padding, 24px);
+	}
+
+	@include media(to hand) {
+		@include rem(padding, 18px);
+	}
+} 
+
+.block-inner_first {
+	@include rem(padding-left, 72px);
+
+	@include media(to lap) {
+		@include rem(padding-left, 36px);
+	}
+
+	@include media(to hand) {
+		@include rem(padding-left, 24px);
+	}
+}
+
+.l-sidebar-left .main-content .block-inner_first {
+	@include rem(padding, 24px 72px 24px 36px);
+
+	@include media(to lap) {
+		@include rem(padding, 24px 36px 24px 24px);
+	}
+
+	@include media(to hand) {
+		@include rem(padding, 18px 24px 18px 18px);
+	}
+} 
+
+.block-inner_last {
+	@include rem(padding-right, 72px);
+
+	@include media(to lap) {
+		@include rem(padding-right, 36px);
+	}
+
+	@include media(to hand) {
+		@include rem(padding-right, 24px);
+	}
+}
+
+.l-sidebar-left .side-content .block-inner_last {
+	@include rem(padding, 24px 36px 24px 72px);
+
+	@include media(to lap) {
+		@include rem(padding, 24px 24px 24px 36px);
+	}
+
+	@include media(to hand) {
+		@include rem(padding, 18px 18px 18px 24px);
+	}
+} 
+
+.block-inner.block-inner-thin {
+	@extend %clearfix; 
+	position: relative;
+	padding-top: 0;
+	padding-bottom: 0;
+	// @include rem(padding-top, 12px);	
+	// @include rem(padding-bottom, 12px);	
+}

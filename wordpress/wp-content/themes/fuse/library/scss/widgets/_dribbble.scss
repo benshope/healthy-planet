@@ -1,0 +1,37 @@
+// DRIBBBLE WIDGET
+.widget_wpgrade_dribbble_widget {
+
+	.widget-title {
+		padding-bottom: 0;
+	}
+}
+
+.wpgrade-dribbble-items {
+	@extend %clearfix;
+	border: 0 !important;
+	@include rem(margin-left, -24px);
+}
+
+.wpgrade-dribbble-item {
+	max-width: 50%;
+	float: left;
+	border: 0 solid transparent;
+	border-bottom: 0 !important;
+	@include rem(border-left-width, 24px);
+}
+
+.wpgrade-dribbble-link {
+	display: block;
+	border: 2px solid white;
+	@include box-shadow(rgba(black, .25) 1px 1px 3px);
+	float: left;
+	max-width: 100%;
+
+	img {
+		display: block;
+	}
+
+	&:hover {
+		border: 2px solid white;
+	}
+}

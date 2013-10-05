@@ -2,11 +2,11 @@ from fabric.api import local
 
 # Start the development server - $ fab run
 def run():
-    local("dev_appserver.py .")
+    local("~/Dropbox/ALL/PHP/dev_appserver.py .")
 
 # Upload the app to App Engine - $ fab upload
 def upload():
-    local("appcfg.py --oauth2 update .")
+    local("~/Dropbox/ALL/PHP/appcfg.py --oauth2 update .")
 
 # Save to github - $ fab save:m="First commit"
 def save(m="Update the app"):
@@ -18,4 +18,4 @@ def save(m="Update the app"):
 # Save to GitHub and upload to App Engine - $ fab update:m="First commit"
 def update(m="Update the app"):
     save(m)
-    local("appcfg.py --oauth2 update .")
+    upload()

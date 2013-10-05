@@ -1,0 +1,113 @@
+.wrapper-footer {
+	a {
+		border: 0;
+	}
+}
+
+.wrapper-footer_twitter {
+	background-color: $white;
+}
+
+.main-footer_twitter {
+	background: $grayLightest;
+	vertical-align: middle;
+}
+
+.side-footer_twitter {
+	@extend %accentBgColor;
+	color: white;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 0.125em;
+	position: relative;
+	vertical-align: middle;
+
+	a {
+		color: white;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	.icon-twitter {
+		@include fs(18px);
+		@include rem(padding-right, $unit/2);
+	}
+
+	.block-inner:before {
+		position: absolute;
+		top: 100%;
+		@include rem(left, 48px + 5px);
+		z-index: 100;
+		border: solid transparent;
+		content: "";
+		height: 0;
+		width: 0;
+		pointer-events: none;
+		margin-top: -1px;
+		@extend %accentBorderTopColor;
+		border-width: 10px;
+		margin-left: -10px;
+	}
+}
+
+
+.wrapper-footer_sidebar {
+	background-color: $grayDark;
+}
+
+.main-footer_sidebar,
+.side-footer_sidebar {
+	@include rem(padding-top, 38px);
+	@include rem(padding-bottom, 38px);
+	color: white;
+}
+
+.main-footer_sidebar {
+	background: #363839;
+}
+
+.side-footer_sidebar {
+	background: #2e3031;
+}
+
+ 
+.wrapper-footer_siteinfo {
+	background-color: $grayDarkest;
+	color: $gray;
+}
+
+.main-footer_siteinfo {
+	background: #1f2021;
+	color: $gray;
+	font-weight: bold;
+	vertical-align:middle;
+}
+
+.side-footer_siteinfo {
+	background: #161617;
+	color: white;
+}
+
+//Widgets
+.widget_footer {
+	@include fs(16px);
+	@include rem(margin-bottom, $unit);
+	padding-right:10%;
+
+	ul, ol {
+		@extend %unstyled;
+	}
+}
+
+.widget_footerleft {
+	@extend .span6;
+}
+
+.widget-title_footer {
+	color: white;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+}

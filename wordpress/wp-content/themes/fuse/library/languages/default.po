@@ -1,0 +1,2850 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Fuse - Responsive Portfolio/ Blog WordPress Theme\n"
+"POT-Creation-Date: 2013-08-22 14:26+0200\n"
+"PO-Revision-Date: 2013-08-22 14:28+0200\n"
+"Last-Translator: Vlad Olaru <vlad.olaru@pixelgrade.com>\n"
+"Language-Team: PixelGrade <contact@pixelgrade.com>\n"
+"Language: English\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-KeywordsList: __;_e;_x;_n_noop\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ../..\n"
+
+#: ../../404.php:18
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: ../../404.php:20
+msgid ""
+"This may be because of a mistyped URL, faulty referral or out-of-date search "
+"engine listing. <br />\n"
+"\t\t\t\t\t\t\t   You should try the <a href=\""
+msgstr ""
+
+#: ../../archive-portfolio.php:37 ../../archive-portfolio.php:50
+#: ../../taxonomy-portfolio_cat.php:56 ../../template-portfolio.php:61
+#: ../../template-portfolio.php:74
+msgid "View all projects"
+msgstr ""
+
+#: ../../archive-portfolio.php:37 ../../template-portfolio.php:61
+msgid "Show All"
+msgstr ""
+
+#: ../../archive-portfolio.php:43 ../../archive-portfolio.php:56
+#: ../../taxonomy-portfolio_cat.php:62 ../../template-portfolio.php:67
+#: ../../template-portfolio.php:80
+#, php-format
+msgid "View all projects in %s"
+msgstr ""
+
+#: ../../archive-portfolio.php:50 ../../taxonomy-portfolio_cat.php:56
+#: ../../template-portfolio.php:74
+msgid "View All"
+msgstr ""
+
+#: ../../comments.php:38 ../../comments.php:58
+msgid "Comment navigation"
+msgstr ""
+
+#: ../../comments.php:39 ../../comments.php:59
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: ../../comments.php:40 ../../comments.php:60
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: ../../comments.php:69
+msgid "Comments are closed."
+msgstr ""
+
+#: ../../comments.php:78
+msgid "Leave a comment"
+msgstr ""
+
+#: ../../comments.php:83
+msgid "Name (required)"
+msgstr ""
+
+#: ../../comments.php:84
+msgid "Email (required)"
+msgstr ""
+
+#: ../../comments.php:86
+msgid "Submit"
+msgstr ""
+
+#: ../../comments.php:89
+msgid "Your thoughts"
+msgstr ""
+
+#: ../../no-results.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: ../../no-results.php:18
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: ../../no-results.php:20
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: ../../no-results.php:22
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: ../../page.php:71 ../../template-page-sidebar-left.php:73
+#: ../../template-page-sidebar-right.php:74
+msgid "Oops, Page Not Found!"
+msgstr ""
+
+#: ../../page.php:74 ../../single.php:120
+#: ../../template-page-sidebar-left.php:76
+#: ../../template-page-sidebar-right.php:77
+msgid "Uh Oh. Something is missing. Try double checking things."
+msgstr ""
+
+#: ../../page.php:77 ../../template-page-sidebar-left.php:79
+#: ../../template-page-sidebar-right.php:80
+msgid "This is the error message in the page.php template."
+msgstr ""
+
+#: ../../search.php:19 ../../template-blog-archive.php:65
+#, php-format
+msgid "Permalink to %s"
+msgstr ""
+
+#: ../../search.php:24 ../../template-blog-archive.php:70
+msgid "Posted on"
+msgstr ""
+
+#: ../../single-portfolio.php:59
+msgid "Previous"
+msgstr ""
+
+#: ../../single-portfolio.php:60
+msgid "Next"
+msgstr ""
+
+#: ../../single.php:88
+msgid "Share on:"
+msgstr ""
+
+#: ../../single.php:92
+msgid "Share on Twitter!"
+msgstr ""
+
+#: ../../single.php:95
+msgid "Share on Facebook!"
+msgstr ""
+
+#: ../../single.php:98
+msgid "Share on Google+!"
+msgstr ""
+
+#: ../../single.php:101
+msgid "Jump to the top of the page"
+msgstr ""
+
+#: ../../single.php:101
+msgid "Back to top"
+msgstr ""
+
+#: ../../single.php:117
+msgid "Oops, Post Not Found!"
+msgstr ""
+
+#: ../../single.php:123
+msgid "This is the error message in the single.php template."
+msgstr ""
+
+#: ../../template-blog-archive.php:12
+#, php-format
+msgid "Category Archives: %s"
+msgstr ""
+
+#: ../../template-blog-archive.php:18
+#, php-format
+msgid "Tag Archives: %s"
+msgstr ""
+
+#: ../../library/wpGrade.php:410
+#, php-format
+msgid "<cite class=\"fn\">%s</cite>"
+msgstr ""
+
+#: ../../library/wpGrade.php:411
+msgid "j M Y"
+msgstr ""
+
+#: ../../library/wpGrade.php:412 ../../library/inc/template-tags.php:104
+msgid "Edit"
+msgstr ""
+
+#: ../../library/wpGrade.php:417 ../../library/inc/template-tags.php:95
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../../library/wpGrade.php:455 ../../library/wpGrade.php:479
+msgid "Previous Page"
+msgstr ""
+
+#: ../../library/wpGrade.php:456 ../../library/wpGrade.php:486
+#: ../../library/wpGrade.php:487
+msgid "Next Page"
+msgstr ""
+
+#: ../../library/wpGrade.php:749 ../../library/wpGrade.php:755
+msgid "Read more about"
+msgstr ""
+
+#: ../../library/wpGrade.php:749 ../../library/wpGrade.php:755
+msgid "Read more"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:29
+msgid "A Section added by hook"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:30
+msgid ""
+"<p class=\"description\">This is a section created by adding a filter to the "
+"sections array. Can be used by child themes to add/remove sections from the "
+"options.</p>"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:105
+msgid "Follow me on Twitter"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:110
+#: ../../library/admin-panel/options.php:115
+msgid "Find me on LinkedIn"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:142
+msgid "Theme Options"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:146
+#: ../../library/admin-panel/options/defaults.php:49
+#: ../../library/admin-panel/options/defaults.php:51
+msgid "Options"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:208
+msgid "General Options"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:209
+msgid "<p class=\"description\">Welcome to the "
+msgstr ""
+
+#: ../../library/admin-panel/options.php:214
+msgid "Import Demo Data"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:215
+msgid ""
+"Here you can import the demo data and get on your way of setting up the site "
+"like the theme demo."
+msgstr ""
+
+#: ../../library/admin-panel/options.php:221
+msgid "Smooth Scrolling"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:222
+msgid "Enable/ Disable smooth scrolling option"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:229
+msgid "<h2>Branding Options</h2>"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:234
+msgid "Main Logo"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:235
+msgid ""
+"Upload here your logo image (we recommend a height of 80-100px).If there is "
+"no image uploaded, plain text will be used instead (generated from the "
+"site's name).\n"
+"     "
+msgstr ""
+
+#: ../../library/admin-panel/options.php:241
+msgid "Smaller Logo"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:242
+msgid ""
+"Add a smaller logo with less detail for the sticky header that appear on "
+"scroll. If there is no image uploaded, main logo or plain text will be used "
+"instead.\n"
+"     "
+msgstr ""
+
+#: ../../library/admin-panel/options.php:248
+msgid "Retina 2x Logo"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:249
+msgid ""
+"To be Retina-ready you need to add a 2x logo image (double the dimensions of "
+"the 1x logo above)."
+msgstr ""
+
+#: ../../library/admin-panel/options.php:255
+msgid "Retina 2x Logo Image"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:260
+msgid "Favicon"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:261
+msgid "Upload a 16px x 16px image that will be used as a favicon."
+msgstr ""
+
+#: ../../library/admin-panel/options.php:266
+msgid "Apple Touch Icon"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:267
+msgid ""
+"You can customize the icon for the Apple touch shortcut to your website. The "
+"size of this icon must be 77x77px."
+msgstr ""
+
+#: ../../library/admin-panel/options.php:272
+msgid "Metro Icon"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:273
+msgid ""
+"You can customize the icon for the shortcuts of your website in the Metro "
+"interface. The size of this icon must be 144x144px."
+msgstr ""
+
+#: ../../library/admin-panel/options.php:278
+msgid "Google Analytics"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:279
+msgid ""
+"Paste here your Google Analytics tracking code (or for what matters any "
+"tracking code) and we will put it on every page."
+msgstr ""
+
+#: ../../library/admin-panel/options.php:288
+msgid "Style Options"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:289
+msgid "<p class=\"description\">Give some style to your website!</p>"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:294
+msgid "Main Color"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:295
+msgid ""
+"Use the color picker to change the main color of the site to match your "
+"brand color."
+msgstr ""
+
+#: ../../library/admin-panel/options.php:301
+msgid "Do you need custom web fonts?"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:302
+msgid ""
+"Tap into the massive <a href=\"http://www.google.com/fonts/\">Google Fonts</"
+"a> collection (with Live preview)."
+msgstr ""
+
+#: ../../library/admin-panel/options.php:310
+msgid "Main Font"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:316
+msgid "Body Font"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:322
+msgid "Menu Font"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:328
+msgid "Do you want to use your own popup for images?"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:329
+msgid "Set this to ON to deactivate our stock popup."
+msgstr ""
+
+#: ../../library/admin-panel/options.php:351
+msgid "Custom CSS Style"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:352
+msgid ""
+"Use this area to make slight css changes. It will be included in the head "
+"section of the page."
+msgstr ""
+
+#: ../../library/admin-panel/options.php:359
+msgid "Custom Javascript"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:360
+msgid ""
+"Use this area to make custom javascript calls.This code will be loaded in "
+"head section"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:361
+msgid "jQuery is available here."
+msgstr ""
+
+#: ../../library/admin-panel/options.php:367
+msgid "Display Custom Css Inline"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:368
+msgid "By default "
+msgstr ""
+
+#: ../../library/admin-panel/options.php:379
+msgid "Header Options"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:380
+msgid "<p class=\"description\">Change header related options from here.</p>"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:386
+msgid "Sticky Header"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:387
+msgid ""
+"Do you want the header to stay fixed on top of the browser windows when you "
+"scroll?"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:394
+msgid "Header Search Form"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:395
+msgid "Do you want a searchform displayed in the sticky menu?"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:402
+msgid "Header Image Height"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:403
+msgid ""
+"What height should the header be when there is no header content but you "
+"have a featured image (in pixels)?"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:412
+msgid "Footer Options"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:413
+msgid "<p class=\"description\">Change footer related options from here.</p>"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:449
+msgid "Twitter Box"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:450
+msgid "Use a twitter block in footer ?"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:458
+msgid "Twitter Username"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:459
+msgid "The username which should feed this box with tweets."
+msgstr ""
+
+#: ../../library/admin-panel/options.php:465 ../../library/inc/widgets.php:736
+msgid "Number of tweets"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:466
+msgid "How many tweets would you like to show in the slider."
+msgstr ""
+
+#: ../../library/admin-panel/options.php:472
+msgid "Twitter Link Title"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:473
+msgid "The title of the box with the Twitter link."
+msgstr ""
+
+#: ../../library/admin-panel/options.php:479
+msgid "Copyright Text"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:480
+msgid "Text that will appear in footer left area (eg. Copyright 2013 "
+msgstr ""
+
+#: ../../library/admin-panel/options.php:487
+msgid "Social Footer Menu"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:488
+msgid ""
+"Show social icons in the footer. The links and order are taken from the "
+"Social and SEO Options tabs."
+msgstr ""
+
+#: ../../library/admin-panel/options.php:498
+msgid "Home Page"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:499
+msgid "<p class=\"description\">General settings for the home page layout.</p>"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:504
+msgid "Display Slider"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:505
+msgid "Do you want to use the homepage parallax slider ?"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:513
+msgid "Slideshow Speed"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:514
+msgid "Change the speed of the slideshow ."
+msgstr ""
+
+#: ../../library/admin-panel/options.php:521
+msgid "Fullscreen slider"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:529
+msgid "Slider Height"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:530
+msgid "When not set the slider adjusts it's height accordin to it's content"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:536
+msgid "Animation Speed"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:537
+msgid "Change the speed of the animation ."
+msgstr ""
+
+#: ../../library/admin-panel/options.php:543
+msgid "Show Direction Arrows"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:551
+msgid "Show Control Bullets"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:559
+msgid "First Content Area"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:560
+msgid "This content will be displayed after the slider"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:570
+msgid "Portfolio - Latest Items"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:571
+msgid "Display the latest portfolio items in a full-width, grid based gallery."
+msgstr ""
+
+#: ../../library/admin-panel/options.php:579
+msgid "Latest Items Title"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:580
+msgid "Change here the title of the latest items section on the homepage."
+msgstr ""
+
+#: ../../library/admin-panel/options.php:581
+msgid "Featured Works"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:586
+msgid "Latest Items More"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:587
+msgid ""
+"Change here the text of the more button for the latest items section on the "
+"homepage."
+msgstr ""
+
+#: ../../library/admin-panel/options.php:588
+msgid "View portfolio"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:593
+#: ../../library/admin-panel/options.php:803
+msgid "How many projects?"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:594
+msgid ""
+"Set the number of projects you want displayed on the homepage (since we use "
+"a 3 column grid, we will use the closest number multiple of 3 to yours)."
+msgstr ""
+
+#: ../../library/admin-panel/options.php:600
+msgid "Display Latest Posts"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:601
+msgid "Do you want to the latest posts on homepage ?"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:609
+msgid "Latest posts layout"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:610
+msgid ""
+"Choose the layout for the latest posts module on homepage. <br>For a good "
+"patchwork layout posts need to have at least 3 images attached."
+msgstr ""
+
+#: ../../library/admin-panel/options.php:620
+msgid "Latest Posts Title"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:621
+msgid "Change here the title of the latest posts section on the homepage."
+msgstr ""
+
+#: ../../library/admin-panel/options.php:622
+msgid "From the blog"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:627
+msgid "Latest Posts More"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:628
+msgid ""
+"Change here the text of the more button for the latest posts section on the "
+"homepage."
+msgstr ""
+
+#: ../../library/admin-panel/options.php:629
+msgid "View All Articles"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:634
+msgid "How many posts?"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:635
+msgid "Set the number of posts you want displayed on the homepage."
+msgstr ""
+
+#: ../../library/admin-panel/options.php:641
+msgid "Show read more buttons?"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:642
+msgid ""
+"Do you want to show read more buttons under your posts excerpts and "
+"categories?"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:649
+msgid "Secondary Content Area"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:650
+msgid ""
+"This content will be displayed after the portfolio latest items gallery."
+msgstr ""
+
+#: ../../library/admin-panel/options.php:677
+msgid "Select Form"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:686
+msgid "Notice"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:695
+msgid "Contact Page"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:696
+msgid ""
+"<p class=\"description\">General settings for the contact page template!</p>"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:701
+msgid "First Box Title"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:707
+msgid "First Box Content"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:708
+msgid "This content will be displayed on the left side of the contact form."
+msgstr ""
+
+#: ../../library/admin-panel/options.php:717
+msgid "Contact Info Title"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:723
+msgid "Phone Number"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:728
+msgid "Email Address"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:733
+msgid "Address"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:746
+msgid "Google Maps Link"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:748
+msgid ""
+"Paste here the the URL that you've got from Google Maps, after navigating to "
+"your location.<br />Here it is <a href=\"http://screenr.com/MjV7\" target="
+"\"_blank\">a short movie</a> showing you how to get the URL"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:753
+msgid "Custom Styling for Map?"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:754
+msgid "Allow us to change the map colors to better match your website."
+msgstr ""
+
+#: ../../library/admin-panel/options.php:768
+msgid "Portfolio Options"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:769
+msgid "<p class=\"description\">General settings for portfolio items.</p>"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:774
+msgid "Portfolio Archive Title"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:775
+msgid ""
+"This is the title of the portfolio page (it will appear over the header "
+"image bellow)."
+msgstr ""
+
+#: ../../library/admin-panel/options.php:776
+msgid "Our Projects."
+msgstr ""
+
+#: ../../library/admin-panel/options.php:782
+msgid "Portfolio Archive Header Image"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:783
+msgid "Image that will be used on top of the portfolio archive page."
+msgstr ""
+
+#: ../../library/admin-panel/options.php:788
+msgid "Filter By Text"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:789
+msgid "Change here the text on the left side of the categories list."
+msgstr ""
+
+#: ../../library/admin-panel/options.php:795
+msgid "Display Category Description"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:796
+msgid ""
+"Do you want to display the portfolio category description on the category "
+"pages?"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:804
+msgid "Set the number of projects you want to be loaded at once."
+msgstr ""
+
+#: ../../library/admin-panel/options.php:810
+msgid "Use AJAX Loading Pagination"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:811
+msgid ""
+"Do you want to use a load more button instead of older/newer links on "
+"portfolio pages?"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:818
+msgid "Load More Text?"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:819
+msgid "Change here the text of the load more link (HTML is supported)."
+msgstr ""
+
+#: ../../library/admin-panel/options.php:825
+msgid "<h2>Technical Stuff</h2>"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:830
+msgid "Single Item Label"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:831
+msgid "Here you can change the singular label.The default is \"Project\""
+msgstr ""
+
+#: ../../library/admin-panel/options.php:832
+msgid "Portfolio"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:837
+msgid "Multiple Items Label (plural)"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:838
+msgid "Here you can change the plural label.The default is \"Projects\""
+msgstr ""
+
+#: ../../library/admin-panel/options.php:839
+msgid "Projects"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:844
+msgid "Change Single Item Slug"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:845
+msgid "Do you want to rewrite the single portfolio item slug ?"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:852
+msgid "New Single Item Slug"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:853
+msgid ""
+"Change the single portfolio item slug as you need it.<br /> Exemple from www."
+"your-domain.com/<b>portfolio</b>/item1 in www.your-domain.com/<b>new-slug</"
+"b>/item1"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:854
+#: ../../library/admin-panel/options.php:870
+#: ../../library/admin-panel/options.php:885
+msgid "After you change this you need to go and <a href=\""
+msgstr ""
+
+#: ../../library/admin-panel/options.php:855
+msgid "portfolio"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:860
+msgid "Change Archive Slug"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:861
+msgid ""
+"Do you want to rewrite the portfolio archive slug? This will only be used if "
+"you don't have a page with the Portfolio template!"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:868
+msgid "New Archive Slug"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:869
+msgid ""
+"Exemple from www.your-domain.com/<b>portfolio</b> in www.your-domain.com/"
+"<b>new-slug</b>"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:875
+msgid "Change Category Slug"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:876
+msgid "Do you want to rewrite the portfolio category slug ?"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:883
+msgid "New Category Slug"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:884
+msgid ""
+"Change the portfolio category slug as you need it.<br /> Exemple from www."
+"your-domain.com/<b>portfolio-category</b>/category in www.your-domain.com/"
+"<b>new-slug</b>/category"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:886
+msgid "portfolio-category"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:898
+msgid "Use Tags"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:899
+msgid "Do you want to assign tags to portfolio items ?"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:908
+msgid "Blog Options"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:909
+msgid ""
+"<p class=\"description\">Change blog archive and single post related options "
+"here.</p>"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:914
+msgid "Archive Title"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:915
+msgid ""
+"This is the title of the blog archive page (it will appear over the header "
+"image bellow)."
+msgstr ""
+
+#: ../../library/admin-panel/options.php:916
+msgid "Blog & News."
+msgstr ""
+
+#: ../../library/admin-panel/options.php:921
+msgid "Blog Archives Header Image"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:922
+msgid ""
+"Image that will be used on top of the blog archive page (sometimes as "
+"background for the category/tag title and description)."
+msgstr ""
+
+#: ../../library/admin-panel/options.php:927
+msgid "Archive Layout"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:928
+msgid "Choose the layout for the blog's archive."
+msgstr ""
+
+#: ../../library/admin-panel/options.php:939
+msgid "Show Posts Featured Images in Archives"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:940
+msgid "Do you want to show the featured images of posts in the archive pages?"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:947
+msgid "Excerpt Length"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:948
+msgid "Set here the excerpt length for the blog archive (number of words)."
+msgstr ""
+
+#: ../../library/admin-panel/options.php:954
+msgid "Single Post Layout"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:955
+msgid "Choose the layout for the blog's single post pages."
+msgstr ""
+
+#: ../../library/admin-panel/options.php:965
+msgid "Show Share Links"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:966
+msgid "Do you want to show the share links bellow the article?"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:974
+msgid "Twitter Share Link"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:982
+msgid "Facebook Share Link"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:990
+msgid "Google+ Share Link"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:998
+msgid "Show Author Box"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:999
+msgid ""
+"Do you want to show the author info box on the left side of the article?"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:1006
+msgid "Show Comments Title"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:1007
+msgid "Do you want to show the number of comments above the comments?"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:1017
+msgid "Social and SEO Options"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:1019
+msgid "<p class=\"description\">Social sharing stuff.</p>"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:1024
+msgid "Add Social Meta Tags"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:1025
+msgid ""
+"Let us properly prepare your theme for the social sharing and discovery by "
+"adding the needed metatags in the <head> section."
+msgstr ""
+
+#: ../../library/admin-panel/options.php:1033
+msgid "Facebook Application ID"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:1034
+msgid ""
+"Enter the Facebook Application ID of the Fan Page which is associated with "
+"this website. You can create one <a href=\"https://developers.facebook.com/"
+"apps\">here</a>."
+msgstr ""
+
+#: ../../library/admin-panel/options.php:1039
+msgid "Facebook Admin ID"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:1040
+msgid ""
+"The id of the user that has administrative privileges to your Facebook App "
+"so you can access the <a href=\"https://www.facebook.com/insights/"
+"\">Facebook Insights</a>."
+msgstr ""
+
+#: ../../library/admin-panel/options.php:1045
+msgid "Google+ Publisher"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:1046
+msgid ""
+"Enter your Google Plus page URL (example: https://plus.google."
+"com/105345678532237339285) here if you have set up a \"Google+ Page\"."
+msgstr ""
+
+#: ../../library/admin-panel/options.php:1051
+msgid "Twitter Site Username"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:1052
+msgid ""
+"The Twitter username of the entire site. The username for the author will be "
+"taken from the author's profile (skip the @)"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:1057
+msgid "Default Social Share Image"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:1058
+msgid ""
+"If an image is uploaded, this will be used for content sharing if you don't "
+"upload a custom image with your content (at least 200px wide recommended)."
+msgstr ""
+
+#: ../../library/admin-panel/options.php:1063
+msgid "Use Twitter Widget"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:1064
+msgid ""
+"Just a widget to show your latest tweets (Twitter API v1.1 compatible). You "
+"can add it in your blog or footer sidebars.<div class=\"description\">"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:1072
+msgid "Important Note : "
+msgstr ""
+
+#: ../../library/admin-panel/options.php:1073
+msgid ""
+"In order to use the Twitter widget you will need to create a Twitter "
+"application <a href=\"https://dev.twitter.com/apps/new\" >here</a> and get "
+"your own key, secrets and access tokens. This is due to the changes that "
+"Twitter made to it's API (v1.1). Please note that these defaults are used on "
+"the "
+msgstr ""
+
+#: ../../library/admin-panel/options.php:1078
+msgid "Consumer Key"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:1084
+msgid "Consumer Secret"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:1090
+msgid "Oauth Access Token"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:1096
+msgid "Oauth Access Token Secret"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:1102
+msgid "<h2>Social Icons Widget Settings</h2>"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:1107
+msgid "Social Icons"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:1108
+msgid ""
+"Define and reorder your social links.<br /><b>Note: </b>These will be "
+"displayed in the \""
+msgstr ""
+
+#: ../../library/admin-panel/options.php:1109
+msgid ""
+"Icons provided by <strong>FontAwesome</strong> and <strong>Entypo</strong>."
+msgstr ""
+
+#: ../../library/admin-panel/options.php:1111
+msgid "Twitter"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:1112
+msgid "Facebook"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:1113
+msgid "Google+"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:1114
+msgid "Skype"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:1115
+msgid "LinkedIn"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:1116
+msgid "Youtube"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:1117
+msgid "Vimeo"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:1118
+msgid "Instagram"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:1119
+msgid "Flickr"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:1120
+msgid "Pinterest"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:1121
+msgid "Tumblr"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:1122
+msgid "Last.FM"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:1123
+msgid "App.net"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:1129
+msgid "Open social icons links in new a window?"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:1130
+msgid "Do you want to open social links in a new window ?"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:1140
+msgid "Theme Auto Update"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:1142
+msgid ""
+"<p class=\"description\">Let us notify you when new versions of this theme "
+"are live on ThemeForest! Update with just one button click. Forget about "
+"manual updates!</p>"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:1147
+msgid "Use Auto Update"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:1148
+msgid ""
+"Activate this to enter the info needed for the theme auto update to work."
+msgstr ""
+
+#: ../../library/admin-panel/options.php:1156
+msgid "ThemeForest Username"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:1157
+msgid ""
+"Enter here your ThemeForest (or Envato) username account (i.e. pixelgrade)."
+msgstr ""
+
+#: ../../library/admin-panel/options.php:1162
+msgid "ThemeForest Secret API Key"
+msgstr ""
+
+#: ../../library/admin-panel/options.php:1163
+msgid ""
+"Enter here the secret api key you've created on ThemeForest. You can create "
+"a new one in the Settings > API Keys section of your profile."
+msgstr ""
+
+#: ../../library/admin-panel/options.php:1181
+msgid "<strong>Theme URL:</strong> "
+msgstr ""
+
+#: ../../library/admin-panel/options.php:1182
+msgid "<strong>Author:</strong> "
+msgstr ""
+
+#: ../../library/admin-panel/options.php:1183
+msgid "<strong>Version:</strong> "
+msgstr ""
+
+#: ../../library/admin-panel/options.php:1185
+msgid "<strong>Tags:</strong> "
+msgstr ""
+
+#: ../../library/admin-panel/options.php:1191
+msgid "Theme Information"
+msgstr ""
+
+#: ../../library/admin-panel/options/defaults.php:62
+#, php-format
+msgid ""
+"<span id=\"footer-thankyou\">Options panel created using <a href=\"%s\" "
+"target=\"_blank\">Redux Framework</a> v%s</span>"
+msgstr ""
+
+#: ../../library/admin-panel/options/defaults.php:250
+#: ../../library/admin-panel/options/defaults.php:251
+#: ../../library/admin-panel/options/defaults.php:691
+msgid "Import / Export"
+msgstr ""
+
+#: ../../library/admin-panel/options/defaults.php:270
+#: ../../library/admin-panel/options/defaults.php:271
+#: ../../library/admin-panel/options/defaults.php:722
+#: ../../library/admin-panel/options/defaults.php:796
+msgid "Dev Mode Info"
+msgstr ""
+
+#: ../../library/admin-panel/options/defaults.php:362
+msgid "Are you sure? You will lose all custom values."
+msgstr ""
+
+#: ../../library/admin-panel/options/defaults.php:644
+msgid "<strong>Settings Imported!</strong>"
+msgstr ""
+
+#: ../../library/admin-panel/options/defaults.php:646
+msgid "<strong>Settings Saved!</strong>"
+msgstr ""
+
+#: ../../library/admin-panel/options/defaults.php:651
+msgid "<strong>Settings have changed, you should save them!</strong>"
+msgstr ""
+
+#: ../../library/admin-panel/options/defaults.php:652
+msgid "<strong><span></span> error(s) were found!</strong>"
+msgstr ""
+
+#: ../../library/admin-panel/options/defaults.php:653
+msgid "<strong><span></span> warning(s) were found!</strong>"
+msgstr ""
+
+#: ../../library/admin-panel/options/defaults.php:740
+msgid "Import / Export Options"
+msgstr ""
+
+#: ../../library/admin-panel/options/defaults.php:741
+msgid "Import Options"
+msgstr ""
+
+#: ../../library/admin-panel/options/defaults.php:742
+msgid "Import from file"
+msgstr ""
+
+#: ../../library/admin-panel/options/defaults.php:742
+msgid "Import from URL"
+msgstr ""
+
+#: ../../library/admin-panel/options/defaults.php:747
+msgid ""
+"Input your backup file below and hit Import to restore your sites options "
+"from a backup."
+msgstr ""
+
+#: ../../library/admin-panel/options/defaults.php:757
+msgid ""
+"Input the URL to another sites options set and hit Import to load the "
+"options from that site."
+msgstr ""
+
+#: ../../library/admin-panel/options/defaults.php:764
+msgid "Import"
+msgstr ""
+
+#: ../../library/admin-panel/options/defaults.php:764
+msgid ""
+"WARNING! This will overwrite any existing options, please proceed with "
+"caution!"
+msgstr ""
+
+#: ../../library/admin-panel/options/defaults.php:767
+msgid "Export Options"
+msgstr ""
+
+#: ../../library/admin-panel/options/defaults.php:769
+msgid ""
+"Here you can download your current option settings. Keep this safe as you "
+"can use it as a backup should anything go wrong, or you can use it to "
+"restore your settings on this site (or any other site)."
+msgstr ""
+
+#: ../../library/admin-panel/options/defaults.php:820
+msgid "Reset to Defaults"
+msgstr ""
+
+#: ../../library/admin-panel/options/fields/color_gradient/field_color_gradient.php:28
+#: ../../library/admin-panel/options/fields/color_gradient/field_color_gradient.php:33
+msgid "From:"
+msgstr ""
+
+#: ../../library/admin-panel/options/fields/color_gradient/field_color_gradient.php:29
+msgid "To:"
+msgstr ""
+
+#: ../../library/admin-panel/options/fields/color_gradient/field_color_gradient.php:35
+msgid " To:"
+msgstr ""
+
+#: ../../library/admin-panel/options/fields/multi_text/field_multi_text.php:31
+#: ../../library/admin-panel/options/fields/multi_text/field_multi_text.php:35
+#: ../../library/admin-panel/options/fields/multi_text/field_multi_text.php:38
+msgid "Remove"
+msgstr ""
+
+#: ../../library/admin-panel/options/fields/multi_text/field_multi_text.php:40
+msgid "Add More"
+msgstr ""
+
+#: ../../library/admin-panel/options/fields/upload/field_upload.php:30
+msgid "Upload"
+msgstr ""
+
+#: ../../library/admin-panel/options/fields/upload/field_upload.php:31
+msgid "Remove Upload"
+msgstr ""
+
+#: ../../library/admin-panel/options/validation/color/validation_color.php:13
+msgid "This field must be a valid color value."
+msgstr ""
+
+#: ../../library/admin-panel/options/validation/comma_numeric/validation_comma_numeric.php:13
+msgid ""
+"You must provide a comma seperated list of numerical values for this option."
+msgstr ""
+
+#: ../../library/admin-panel/options/validation/date/validation_date.php:13
+msgid "This field must be a valid date."
+msgstr ""
+
+#: ../../library/admin-panel/options/validation/email/validation_email.php:13
+msgid "You must provide a valid email for this option."
+msgstr ""
+
+#: ../../library/admin-panel/options/validation/no_html/validation_no_html.php:13
+msgid ""
+"You must not enter any HTML in this field, all HTML tags have been removed."
+msgstr ""
+
+#: ../../library/admin-panel/options/validation/no_special_chars/validation_no_special_chars.php:13
+msgid ""
+"You must not enter any special characters in this field, all special "
+"characters have been removed."
+msgstr ""
+
+#: ../../library/admin-panel/options/validation/numeric/validation_numeric.php:13
+msgid "You must provide a numerical value for this option."
+msgstr ""
+
+#: ../../library/admin-panel/options/validation/url/validation_url.php:13
+msgid "You must provide a valid URL for this option."
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:21
+#: ../../library/inc/custom-entities.php:81
+#: ../../library/inc/custom-entities.php:121
+msgid "Add New"
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:22
+msgid "Add New "
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:23
+msgid "Edit "
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:24
+msgid "New "
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:25
+msgid "All "
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:26
+msgid "View "
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:27
+msgid "Search "
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:28
+#: ../../library/inc/custom-entities.php:29
+msgid "No "
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:79
+msgid "Home Slides"
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:80
+msgid "Slide"
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:82
+msgid "Add New Slide"
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:83
+msgid "Edit Slide"
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:84
+msgid "New Slide"
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:85
+msgid "All Slides"
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:86
+msgid "View Slide"
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:87
+msgid "Search Slides"
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:88
+msgid "No slides found"
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:89
+msgid "No slides found in trash"
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:91
+msgid "Home Slider"
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:119
+#: ../../library/inc/custom-entities.php:131
+msgid "Testimonials"
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:120
+msgid "Testimonial"
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:122
+msgid "Add New Testimonial"
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:123
+msgid "Edit Testimonial"
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:124
+msgid "New Testimonial"
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:125
+msgid "All Testimonials"
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:126
+msgid "View Testimonial"
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:127
+msgid "Search Testimonials"
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:128
+msgid "No Testimonial found"
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:129
+msgid "No Testimonial found in Trash"
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:161
+#: ../../library/inc/custom-entities.php:171
+msgid "Portfolio Categories"
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:162
+msgid "Portfolio Category"
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:163
+msgid "Search Portfolio Category"
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:164
+msgid "All Portfolio Categories"
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:165
+msgid "Parent Portfolio Category"
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:166
+msgid "Parent Portfolio Category: "
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:167
+msgid "Edit Portfolio Category"
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:168
+msgid "Update Portfolio Category"
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:169
+msgid "Add New Portfolio Category"
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:170
+msgid "New Portfolio Category Name"
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:201
+msgid "Author"
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:202
+#: ../../library/inc/metaboxes/metaboxes.php:443
+msgid "Author Function"
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:232
+#, php-format
+msgid "Project updated. <a href=\"%s\">View project</a>"
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:233
+#: ../../library/inc/custom-entities.php:247
+#: ../../library/inc/custom-entities.php:261
+msgid "Custom field updated."
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:234
+#: ../../library/inc/custom-entities.php:248
+#: ../../library/inc/custom-entities.php:262
+msgid "Custom field deleted."
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:235
+msgid "Project updated."
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:236
+#, php-format
+msgid "Project restored to revision from %s"
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:237
+#, php-format
+msgid "Project published. <a href=\"%s\">View project</a>"
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:238
+msgid "Project saved."
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:239
+#, php-format
+msgid "Project submitted. <a target=\"_blank\" href=\"%s\">Preview project</a>"
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:240
+#, php-format
+msgid ""
+"Project scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href="
+"\"%2$s\">Preview project</a>"
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:240
+#: ../../library/inc/custom-entities.php:254
+#: ../../library/inc/custom-entities.php:268
+msgid "M j, Y @ G:i"
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:241
+#, php-format
+msgid ""
+"Project draft updated. <a target=\"_blank\" href=\"%s\">Preview project</a>"
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:246
+#, php-format
+msgid "Slide updated. <a href=\"%s\">View slide</a>"
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:249
+msgid "Slide updated."
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:250
+#, php-format
+msgid "Slide restored to revision from %s"
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:251
+#, php-format
+msgid "Slide published. <a href=\"%s\">View slide</a>"
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:252
+msgid "Slide saved."
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:253
+#, php-format
+msgid "Slide submitted. <a target=\"_blank\" href=\"%s\">Preview slide</a>"
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:254
+#, php-format
+msgid ""
+"Slide scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s"
+"\">Preview slide</a>"
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:255
+#, php-format
+msgid "Slide draft updated. <a target=\"_blank\" href=\"%s\">Preview slide</a>"
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:260
+#, php-format
+msgid "Testimonial updated. <a href=\"%s\">View testimonial</a>"
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:263
+msgid "Testimonial updated."
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:264
+#, php-format
+msgid "Testimonial restored to revision from %s"
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:265
+#, php-format
+msgid "Testimonial published. <a href=\"%s\">View testimonial</a>"
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:266
+msgid "Testimonial saved."
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:267
+#, php-format
+msgid ""
+"Testimonial submitted. <a target=\"_blank\" href=\"%s\">Preview testimonial</"
+"a>"
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:268
+#, php-format
+msgid ""
+"Testimonial scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href="
+"\"%2$s\">Preview testimonial</a>"
+msgstr ""
+
+#: ../../library/inc/custom-entities.php:269
+#, php-format
+msgid ""
+"Testimonial draft updated. <a target=\"_blank\" href=\"%s\">Preview "
+"testimonial</a>"
+msgstr ""
+
+#: ../../library/inc/menus.php:13
+msgid "Header Menu"
+msgstr ""
+
+#: ../../library/inc/portfolio-gallery.php:18
+msgid "Format"
+msgstr ""
+
+#: ../../library/inc/portfolio-gallery.php:40
+msgid "Standard"
+msgstr ""
+
+#: ../../library/inc/template-tags.php:49
+msgid "<span class=\"meta-nav\">&laquo;</span> Older posts"
+msgstr ""
+
+#: ../../library/inc/template-tags.php:53
+msgid "Newer posts <span class=\"meta-nav\">&raquo;</span>"
+msgstr ""
+
+#: ../../library/inc/template-tags.php:78
+msgid "Pingback:"
+msgstr ""
+
+#: ../../library/inc/template-tags.php:78
+msgid "(Edit)"
+msgstr ""
+
+#: ../../library/inc/template-tags.php:88
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: ../../library/inc/template-tags.php:126
+#, php-format
+msgid ""
+"<a href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\"><time class=\"entry-date\" "
+"datetime=\"%3$s\" pubdate>%4$s</time></a>"
+msgstr ""
+
+#: ../../library/inc/template-tags.php:132
+#, php-format
+msgid "View all posts by %s"
+msgstr ""
+
+#: ../../library/inc/widgets.php:11
+msgid "Sidebar 1"
+msgstr ""
+
+#: ../../library/inc/widgets.php:12
+msgid "The first (primary) sidebar."
+msgstr ""
+
+#: ../../library/inc/widgets.php:20
+msgid "Page Sidebar"
+msgstr ""
+
+#: ../../library/inc/widgets.php:21
+msgid "The sidebar that will be used for pages."
+msgstr ""
+
+#: ../../library/inc/widgets.php:29
+msgid "Footer Left"
+msgstr ""
+
+#: ../../library/inc/widgets.php:30
+msgid "Widget Area on the left side of the footer."
+msgstr ""
+
+#: ../../library/inc/widgets.php:38
+msgid "Footer Right"
+msgstr ""
+
+#: ../../library/inc/widgets.php:39
+msgid "Widget Area on the right side of the footer."
+msgstr ""
+
+#: ../../library/inc/widgets.php:60
+msgid " Social Links"
+msgstr ""
+
+#: ../../library/inc/widgets.php:60
+msgid "Display the social links defined in the theme's options"
+msgstr ""
+
+#: ../../library/inc/widgets.php:105
+msgid "We Are Social"
+msgstr ""
+
+#: ../../library/inc/widgets.php:108 ../../library/inc/widgets.php:173
+#: ../../library/inc/widgets.php:238 ../../library/inc/widgets.php:324
+#: ../../library/inc/widgets.php:637 ../../library/inc/widgets.php:728
+msgid "Title"
+msgstr ""
+
+#: ../../library/inc/widgets.php:118
+msgid " Dribbble Widget"
+msgstr ""
+
+#: ../../library/inc/widgets.php:118
+msgid "Display Dribbble images in your sidebar or footer"
+msgstr ""
+
+#: ../../library/inc/widgets.php:167
+msgid "Dribbble shots"
+msgstr ""
+
+#: ../../library/inc/widgets.php:177
+msgid "Dribbble username"
+msgstr ""
+
+#: ../../library/inc/widgets.php:181 ../../library/inc/widgets.php:246
+#: ../../library/inc/widgets.php:649
+msgid "Number of images"
+msgstr ""
+
+#: ../../library/inc/widgets.php:192
+msgid " Instagram Widget"
+msgstr ""
+
+#: ../../library/inc/widgets.php:192
+msgid "Display Instagram images in your sidebar or footer"
+msgstr ""
+
+#: ../../library/inc/widgets.php:232
+msgid "Instagram shots"
+msgstr ""
+
+#: ../../library/inc/widgets.php:242
+msgid "Instagram username"
+msgstr ""
+
+#: ../../library/inc/widgets.php:257
+msgid " Contact Widget"
+msgstr ""
+
+#: ../../library/inc/widgets.php:257
+msgid "Display your contact information"
+msgstr ""
+
+#: ../../library/inc/widgets.php:299
+msgid "No contact info to be displayed"
+msgstr ""
+
+#: ../../library/inc/widgets.php:318
+msgid "Contact us"
+msgstr ""
+
+#: ../../library/inc/widgets.php:329
+msgid "Label"
+msgstr ""
+
+#: ../../library/inc/widgets.php:333
+msgid "Name"
+msgstr ""
+
+#: ../../library/inc/widgets.php:337
+msgid "Link"
+msgstr ""
+
+#: ../../library/inc/widgets.php:365
+msgid "Fuse Latest Posts Slider"
+msgstr ""
+
+#: ../../library/inc/widgets.php:365
+msgid "Display the latest blog posts in your sidebar or footer"
+msgstr ""
+
+#: ../../library/inc/widgets.php:410
+msgid "From the Blog"
+msgstr ""
+
+#: ../../library/inc/widgets.php:415
+msgid "Title:"
+msgstr ""
+
+#: ../../library/inc/widgets.php:421
+msgid "Number of posts:"
+msgstr ""
+
+#: ../../library/inc/widgets.php:436
+msgid " Flickr Widget"
+msgstr ""
+
+#: ../../library/inc/widgets.php:436
+msgid ""
+"Display Flickr images in your sidebar or footer (maximum 20 but we recommend "
+"less)."
+msgstr ""
+
+#: ../../library/inc/widgets.php:631
+msgid "Flickr Shots"
+msgstr ""
+
+#: ../../library/inc/widgets.php:641
+msgid "Username or RSS url"
+msgstr ""
+
+#: ../../library/inc/widgets.php:645
+#: ../../templates/components/blog-single-author-box.php:55
+msgid "Tags"
+msgstr ""
+
+#: ../../library/inc/widgets.php:662
+msgid " Twitter Widget"
+msgstr ""
+
+#: ../../library/inc/widgets.php:662
+msgid "Display Latest Tweets"
+msgstr ""
+
+#: ../../library/inc/widgets.php:724
+msgid "Tweets"
+msgstr ""
+
+#: ../../library/inc/widgets.php:732
+msgid "Twitter username"
+msgstr ""
+
+#: ../../library/inc/widgets.php:807
+msgid "moments ago"
+msgstr ""
+
+#: ../../library/inc/archive-nav-menu/post-type-archive-links.php:24
+msgid "Archives"
+msgstr ""
+
+#: ../../library/inc/import/wordpress-importer/parsers.php:42
+#: ../../library/inc/import/wordpress-importer/parsers.php:72
+#: ../../library/inc/import/wordpress-importer/parsers.php:80
+msgid "There was an error when reading this WXR file"
+msgstr ""
+
+#: ../../library/inc/import/wordpress-importer/parsers.php:43
+msgid ""
+"Details are shown above. The importer will now try again with a different "
+"parser..."
+msgstr ""
+
+#: ../../library/inc/import/wordpress-importer/parsers.php:84
+#: ../../library/inc/import/wordpress-importer/parsers.php:89
+#: ../../library/inc/import/wordpress-importer/parsers.php:279
+#: ../../library/inc/import/wordpress-importer/parsers.php:468
+msgid ""
+"This does not appear to be a WXR file, missing/invalid WXR version number"
+msgstr ""
+
+#: ../../library/inc/import/wordpress-importer/wordpress-importer.php:134
+#: ../../library/inc/import/wordpress-importer/wordpress-importer.php:143
+#: ../../library/inc/import/wordpress-importer/wordpress-importer.php:194
+#: ../../library/inc/import/wordpress-importer/wordpress-importer.php:198
+#: ../../library/inc/import/wordpress-importer/wordpress-importer.php:207
+msgid "Sorry, there has been an error."
+msgstr ""
+
+#: ../../library/inc/import/wordpress-importer/wordpress-importer.php:135
+msgid "The file does not exist, please try again."
+msgstr ""
+
+#: ../../library/inc/import/wordpress-importer/wordpress-importer.php:178
+msgid "All done."
+msgstr ""
+
+#: ../../library/inc/import/wordpress-importer/wordpress-importer.php:178
+msgid "Have fun!"
+msgstr ""
+
+#: ../../library/inc/import/wordpress-importer/wordpress-importer.php:179
+msgid "Remember to update the passwords and roles of imported users."
+msgstr ""
+
+#: ../../library/inc/import/wordpress-importer/wordpress-importer.php:199
+#, php-format
+msgid ""
+"The export file could not be found at <code>%s</code>. It is likely that "
+"this was caused by a permissions problem."
+msgstr ""
+
+#: ../../library/inc/import/wordpress-importer/wordpress-importer.php:215
+#, php-format
+msgid ""
+"This WXR file (version %s) may not be supported by this version of the "
+"importer. Please consider updating."
+msgstr ""
+
+#: ../../library/inc/import/wordpress-importer/wordpress-importer.php:240
+#, php-format
+msgid ""
+"Failed to import author %s. Their posts will be attributed to the current "
+"user."
+msgstr ""
+
+#: ../../library/inc/import/wordpress-importer/wordpress-importer.php:266
+msgid "Assign Authors"
+msgstr ""
+
+#: ../../library/inc/import/wordpress-importer/wordpress-importer.php:267
+msgid ""
+"To make it easier for you to edit and save the imported content, you may "
+"want to reassign the author of the imported item to an existing user of this "
+"site. For example, you may want to import all the entries as <code>admin</"
+"code>s entries."
+msgstr ""
+
+#: ../../library/inc/import/wordpress-importer/wordpress-importer.php:269
+#, php-format
+msgid ""
+"If a new user is created by WordPress, a new password will be randomly "
+"generated and the new user&#8217;s role will be set as %s. Manually changing "
+"the new user&#8217;s details will be necessary."
+msgstr ""
+
+#: ../../library/inc/import/wordpress-importer/wordpress-importer.php:279
+msgid "Import Attachments"
+msgstr ""
+
+#: ../../library/inc/import/wordpress-importer/wordpress-importer.php:282
+msgid "Download and import file attachments"
+msgstr ""
+
+#: ../../library/inc/import/wordpress-importer/wordpress-importer.php:299
+msgid "Import author:"
+msgstr ""
+
+#: ../../library/inc/import/wordpress-importer/wordpress-importer.php:310
+msgid "or create new user with login name:"
+msgstr ""
+
+#: ../../library/inc/import/wordpress-importer/wordpress-importer.php:313
+msgid "as a new user:"
+msgstr ""
+
+#: ../../library/inc/import/wordpress-importer/wordpress-importer.php:321
+msgid "assign posts to an existing user:"
+msgstr ""
+
+#: ../../library/inc/import/wordpress-importer/wordpress-importer.php:323
+msgid "or assign posts to an existing user:"
+msgstr ""
+
+#: ../../library/inc/import/wordpress-importer/wordpress-importer.php:324
+msgid "- Select -"
+msgstr ""
+
+#: ../../library/inc/import/wordpress-importer/wordpress-importer.php:374
+#, php-format
+msgid ""
+"Failed to create new user for %s. Their posts will be attributed to the "
+"current user."
+msgstr ""
+
+#: ../../library/inc/import/wordpress-importer/wordpress-importer.php:425
+#, php-format
+msgid "Failed to import category %s"
+msgstr ""
+
+#: ../../library/inc/import/wordpress-importer/wordpress-importer.php:465
+#, php-format
+msgid "Failed to import post tag %s"
+msgstr ""
+
+#: ../../library/inc/import/wordpress-importer/wordpress-importer.php:511
+#: ../../library/inc/import/wordpress-importer/wordpress-importer.php:652
+#: ../../library/inc/import/wordpress-importer/wpgrade-import-class.php:237
+#, php-format
+msgid "Failed to import %s %s"
+msgstr ""
+
+#: ../../library/inc/import/wordpress-importer/wordpress-importer.php:537
+#: ../../library/inc/import/wordpress-importer/wpgrade-import-class.php:107
+#, php-format
+msgid "Failed to import &#8220;%s&#8221;: Invalid post type %s"
+msgstr ""
+
+#: ../../library/inc/import/wordpress-importer/wordpress-importer.php:559
+#, php-format
+msgid "%s &#8220;%s&#8221; already exists."
+msgstr ""
+
+#: ../../library/inc/import/wordpress-importer/wordpress-importer.php:618
+#: ../../library/inc/import/wordpress-importer/wpgrade-import-class.php:203
+#, php-format
+msgid "Failed to import %s &#8220;%s&#8221;"
+msgstr ""
+
+#: ../../library/inc/import/wordpress-importer/wordpress-importer.php:784
+msgid "Menu item skipped due to missing menu slug"
+msgstr ""
+
+#: ../../library/inc/import/wordpress-importer/wordpress-importer.php:791
+#, php-format
+msgid "Menu item skipped due to invalid menu slug: %s"
+msgstr ""
+
+#: ../../library/inc/import/wordpress-importer/wordpress-importer.php:854
+msgid "Fetching attachments is not enabled"
+msgstr ""
+
+#: ../../library/inc/import/wordpress-importer/wordpress-importer.php:867
+msgid "Invalid file type"
+msgstr ""
+
+#: ../../library/inc/import/wordpress-importer/wordpress-importer.php:911
+msgid "Remote server did not respond"
+msgstr ""
+
+#: ../../library/inc/import/wordpress-importer/wordpress-importer.php:917
+#, php-format
+msgid "Remote server returned error response %1$d %2$s"
+msgstr ""
+
+#: ../../library/inc/import/wordpress-importer/wordpress-importer.php:924
+msgid "Remote file is incorrect size"
+msgstr ""
+
+#: ../../library/inc/import/wordpress-importer/wordpress-importer.php:929
+msgid "Zero size file downloaded"
+msgstr ""
+
+#: ../../library/inc/import/wordpress-importer/wordpress-importer.php:935
+#, php-format
+msgid "Remote file is too large, limit is %s"
+msgstr ""
+
+#: ../../library/inc/import/wordpress-importer/wordpress-importer.php:1034
+msgid "Import WordPress"
+msgstr ""
+
+#: ../../library/inc/import/wordpress-importer/wordpress-importer.php:1041
+#, php-format
+msgid ""
+"A new version of this importer is available. Please update to version %s to "
+"ensure compatibility with newer export files."
+msgstr ""
+
+#: ../../library/inc/import/wordpress-importer/wordpress-importer.php:1056
+msgid ""
+"Howdy! Upload your WordPress eXtended RSS (WXR) file and we&#8217;ll import "
+"the posts, pages, comments, custom fields, categories, and tags into this "
+"site."
+msgstr ""
+
+#: ../../library/inc/import/wordpress-importer/wordpress-importer.php:1057
+msgid "Choose a WXR (.xml) file to upload, then click Upload file and import."
+msgstr ""
+
+#: ../../library/inc/metaboxes/init.php:690
+msgid "Please Try Again"
+msgstr ""
+
+#: ../../library/inc/metaboxes/init.php:707
+msgid "Remove Embed"
+msgstr ""
+
+#: ../../library/inc/metaboxes/init.php:713
+#, php-format
+msgid "No oEmbed Results Found for %s. View more info at"
+msgstr ""
+
+#: ../../library/inc/metaboxes/metaboxes.php:46
+msgid "Upload an image or enter an URL."
+msgstr ""
+
+#: ../../library/inc/metaboxes/metaboxes.php:52
+msgid "The caption of the slider"
+msgstr ""
+
+#: ../../library/inc/metaboxes/metaboxes.php:75
+#: ../../library/inc/metaboxes/metaboxes.php:310
+msgid "Video Settings"
+msgstr ""
+
+#: ../../library/inc/metaboxes/metaboxes.php:82
+msgid "Youtube Link"
+msgstr ""
+
+#: ../../library/inc/metaboxes/metaboxes.php:83
+msgid "Enter here an Youtube video link. Any videos bellow will be ignored."
+msgstr ""
+
+#: ../../library/inc/metaboxes/metaboxes.php:89
+msgid "Vimeo Link"
+msgstr ""
+
+#: ../../library/inc/metaboxes/metaboxes.php:90
+msgid "Enter here a Vimeo video link. Any videos bellow will be ignored."
+msgstr ""
+
+#: ../../library/inc/metaboxes/metaboxes.php:96
+msgid "Vimeo Video Width"
+msgstr ""
+
+#: ../../library/inc/metaboxes/metaboxes.php:97
+msgid ""
+"Enter here the video width (we are only interested in the aspect ratio, "
+"width/height, so you could use 16 and 9; we use this to try and get rid of "
+"the black bars)"
+msgstr ""
+
+#: ../../library/inc/metaboxes/metaboxes.php:103
+msgid "Vimeo Video Height"
+msgstr ""
+
+#: ../../library/inc/metaboxes/metaboxes.php:104
+msgid "Enter here the video height"
+msgstr ""
+
+#: ../../library/inc/metaboxes/metaboxes.php:110
+#: ../../library/inc/metaboxes/metaboxes.php:324
+msgid "MP4 File URL"
+msgstr ""
+
+#: ../../library/inc/metaboxes/metaboxes.php:111
+#: ../../library/inc/metaboxes/metaboxes.php:325
+msgid ""
+"Please enter in the URL to your .m4v video file (h.264 codec). This format "
+"is need to provide support for Safari, IE9, iPhone, iPad, Android, and "
+"Windows Phone 7"
+msgstr ""
+
+#: ../../library/inc/metaboxes/metaboxes.php:117
+#: ../../library/inc/metaboxes/metaboxes.php:331
+msgid "WebM/VP8 File URL"
+msgstr ""
+
+#: ../../library/inc/metaboxes/metaboxes.php:118
+#: ../../library/inc/metaboxes/metaboxes.php:332
+msgid ""
+"Please enter in the URL to your .webm video file. This format is need to "
+"provide support for Firefox4, Opera, and Chrome"
+msgstr ""
+
+#: ../../library/inc/metaboxes/metaboxes.php:124
+#: ../../library/inc/metaboxes/metaboxes.php:338
+msgid "Ogg/Vorbis File URL"
+msgstr ""
+
+#: ../../library/inc/metaboxes/metaboxes.php:125
+#: ../../library/inc/metaboxes/metaboxes.php:339
+msgid ""
+"Please enter in the URL to your .ogv video file. This format is need to "
+"provide support for older Firefox and Opera versions"
+msgstr ""
+
+#: ../../library/inc/metaboxes/metaboxes.php:131
+#: ../../library/inc/metaboxes/metaboxes.php:345
+msgid "Preview Image"
+msgstr ""
+
+#: ../../library/inc/metaboxes/metaboxes.php:132
+#: ../../library/inc/metaboxes/metaboxes.php:346
+msgid ""
+"This will be the image displayed when the video has not been played yet. The "
+"image should be at least 640px wide. Click the \"Upload\" button to open the "
+"Media Manager, and click \"Use as Preview Image\" once you have uploaded or "
+"chosen an image from the media library."
+msgstr ""
+
+#: ../../library/inc/metaboxes/metaboxes.php:142
+#: ../../library/inc/metaboxes/metaboxes.php:196
+#: ../../library/inc/metaboxes/metaboxes.php:240
+msgid "Header Settings"
+msgstr ""
+
+#: ../../library/inc/metaboxes/metaboxes.php:150
+#: ../../library/inc/metaboxes/metaboxes.php:209
+msgid "Hide Title"
+msgstr ""
+
+#: ../../library/inc/metaboxes/metaboxes.php:151
+msgid "Hide the page title?"
+msgstr ""
+
+#: ../../library/inc/metaboxes/metaboxes.php:156
+#: ../../library/inc/metaboxes/metaboxes.php:218
+#: ../../library/inc/metaboxes/metaboxes.php:248
+msgid "Header HTML Content"
+msgstr ""
+
+#: ../../library/inc/metaboxes/metaboxes.php:157
+#: ../../library/inc/metaboxes/metaboxes.php:219
+#: ../../library/inc/metaboxes/metaboxes.php:249
+msgid ""
+"Create your own title and header content with the featured image as "
+"background."
+msgstr ""
+
+#: ../../library/inc/metaboxes/metaboxes.php:165
+#: ../../library/inc/metaboxes/metaboxes.php:228
+#: ../../library/inc/metaboxes/metaboxes.php:257
+msgid "Background Color"
+msgstr ""
+
+#: ../../library/inc/metaboxes/metaboxes.php:166
+#: ../../library/inc/metaboxes/metaboxes.php:229
+#: ../../library/inc/metaboxes/metaboxes.php:258
+msgid ""
+"If you haven't chosen a featured image this color will be used as background."
+msgstr ""
+
+#: ../../library/inc/metaboxes/metaboxes.php:179
+msgid "Project Builder"
+msgstr ""
+
+#: ../../library/inc/metaboxes/metaboxes.php:186
+msgid "My row"
+msgstr ""
+
+#: ../../library/inc/metaboxes/metaboxes.php:187
+msgid "Row type"
+msgstr ""
+
+#: ../../library/inc/metaboxes/metaboxes.php:203
+msgid "Featured Project"
+msgstr ""
+
+#: ../../library/inc/metaboxes/metaboxes.php:204
+msgid ""
+"Items checked as featured will be displayed first in the homepage portfolio "
+"section (ordered by date descending)"
+msgstr ""
+
+#: ../../library/inc/metaboxes/metaboxes.php:210
+msgid "Hide the project title?"
+msgstr ""
+
+#: ../../library/inc/metaboxes/metaboxes.php:272
+msgid "Quote Settings"
+msgstr ""
+
+#: ../../library/inc/metaboxes/metaboxes.php:279
+msgid "Quote Content"
+msgstr ""
+
+#: ../../library/inc/metaboxes/metaboxes.php:280
+msgid "Please type the text of your quote here."
+msgstr ""
+
+#: ../../library/inc/metaboxes/metaboxes.php:289
+#: ../../library/inc/metaboxes/metaboxes.php:437
+msgid "Author Name"
+msgstr ""
+
+#: ../../library/inc/metaboxes/metaboxes.php:296
+#: ../../library/inc/metaboxes/metaboxes.php:449
+msgid "Author Link"
+msgstr ""
+
+#: ../../library/inc/metaboxes/metaboxes.php:297
+msgid ""
+"Insert here an url if you want the author name to be linked to that address."
+msgstr ""
+
+#: ../../library/inc/metaboxes/metaboxes.php:317
+#: ../../library/inc/metaboxes/metaboxes.php:366
+msgid "Embed Code"
+msgstr ""
+
+#: ../../library/inc/metaboxes/metaboxes.php:318
+msgid ""
+"Enter here a Youtube, Vimeo (or other online video services) embed code "
+"here. The width should be a minimum of 640px. We will use this if filled, "
+"not the selfhosted options bellow!"
+msgstr ""
+
+#: ../../library/inc/metaboxes/metaboxes.php:359
+msgid "Audio Settings"
+msgstr ""
+
+#: ../../library/inc/metaboxes/metaboxes.php:367
+msgid ""
+"Enter here a embed code here. The width should be a minimum of 640px. We "
+"will use this if filled, not the selfhosted options bellow!"
+msgstr ""
+
+#: ../../library/inc/metaboxes/metaboxes.php:373
+msgid "MP3 File URL"
+msgstr ""
+
+#: ../../library/inc/metaboxes/metaboxes.php:374
+msgid "Please enter in the URL to the .mp3 file"
+msgstr ""
+
+#: ../../library/inc/metaboxes/metaboxes.php:380
+msgid "M4A File URL"
+msgstr ""
+
+#: ../../library/inc/metaboxes/metaboxes.php:381
+msgid "Please enter in the URL to the .m4a file"
+msgstr ""
+
+#: ../../library/inc/metaboxes/metaboxes.php:387
+msgid "OGA File URL"
+msgstr ""
+
+#: ../../library/inc/metaboxes/metaboxes.php:388
+msgid "Please enter in the URL to the .ogg or .oga file"
+msgstr ""
+
+#: ../../library/inc/metaboxes/metaboxes.php:394
+msgid "Poster Image"
+msgstr ""
+
+#: ../../library/inc/metaboxes/metaboxes.php:395
+msgid ""
+"This will be the image displayed above the audio controls. The image should "
+"be at least 640px wide. Click the \"Upload\" button to open the Media "
+"Manager, and click \"Use as Poster Image\" once you have uploaded or chosen "
+"an image from the media library."
+msgstr ""
+
+#: ../../library/inc/metaboxes/metaboxes.php:430
+msgid "Testimonial Metabox"
+msgstr ""
+
+#: ../../library/inc/metaboxes/metaboxes.php:438
+msgid "The author of this confession"
+msgstr ""
+
+#: ../../library/inc/metaboxes/metaboxes.php:444
+msgid "The title of the author (eg. Client)"
+msgstr ""
+
+#: ../../library/inc/metaboxes/metaboxes.php:450
+msgid "A link to the author website (optional)"
+msgstr ""
+
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:169
+#: ../../library/inc/required-plugins/required-plugins.php:61
+msgid "Install Required Plugins"
+msgstr ""
+
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:170
+#: ../../library/inc/required-plugins/required-plugins.php:62
+msgid "Install Plugins"
+msgstr ""
+
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:171
+#: ../../library/inc/required-plugins/required-plugins.php:63
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:172
+msgid "Something went wrong."
+msgstr ""
+
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:173
+#: ../../library/inc/required-plugins/required-plugins.php:65
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgstr ""
+
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:174
+#: ../../library/inc/required-plugins/required-plugins.php:66
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgstr ""
+
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:175
+#, php-format
+msgid "There is a new update for %1$s."
+msgstr ""
+
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:176
+#: ../../library/inc/required-plugins/required-plugins.php:67
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to install the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"installed."
+msgstr ""
+
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:177
+#: ../../library/inc/required-plugins/required-plugins.php:68
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgstr ""
+
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:178
+#: ../../library/inc/required-plugins/required-plugins.php:69
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgstr ""
+
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:179
+#: ../../library/inc/required-plugins/required-plugins.php:70
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugin. Contact the administrator of this site for help on getting the "
+"plugin activated."
+msgstr ""
+
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:180
+#: ../../library/inc/required-plugins/required-plugins.php:71
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr ""
+
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:181
+#: ../../library/inc/required-plugins/required-plugins.php:72
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to update the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"updated."
+msgstr ""
+
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:182
+#: ../../library/inc/required-plugins/required-plugins.php:73
+msgid "Begin installing plugin"
+msgstr ""
+
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:183
+msgid "Begin updating plugin"
+msgstr ""
+
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:184
+#: ../../library/inc/required-plugins/required-plugins.php:74
+msgid "Activate installed plugin"
+msgstr ""
+
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:185
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:515
+#: ../../library/inc/required-plugins/required-plugins.php:75
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:186
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:1913
+#: ../../library/inc/required-plugins/required-plugins.php:76
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:187
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:542
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:2125
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:570
+#, php-format
+msgid "The following plugin was activated successfully: %s."
+msgstr ""
+
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:743
+msgid "Dismiss this notice"
+msgstr ""
+
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:1130
+msgid "External Link"
+msgstr ""
+
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:1135
+msgid "Private Repository"
+msgstr ""
+
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:1138
+msgid "Pre-Packaged"
+msgstr ""
+
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:1142
+msgid "WordPress Repository"
+msgstr ""
+
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:1145
+msgid "Required"
+msgstr ""
+
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:1145
+msgid "Recommended"
+msgstr ""
+
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:1148
+msgid "Not Installed"
+msgstr ""
+
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:1150
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:1152
+msgid "Not Updated"
+msgstr ""
+
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:1154
+msgid "Active"
+msgstr ""
+
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:1348
+#, php-format
+msgid ""
+"No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
+"Dashboard\">Return to the Dashboard</a>"
+msgstr ""
+
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:1364
+msgid "Plugin"
+msgstr ""
+
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:1365
+msgid "Source"
+msgstr ""
+
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:1366
+msgid "Type"
+msgstr ""
+
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:1367
+msgid "Status"
+msgstr ""
+
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:1385
+msgid "Install"
+msgstr ""
+
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:1386
+msgid "Activate"
+msgstr ""
+
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:1896
+msgid "Install package not available."
+msgstr ""
+
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:1897
+#, php-format
+msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+msgstr ""
+
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:1898
+msgid "Unpacking the package&#8230;"
+msgstr ""
+
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:1899
+msgid "Installing the plugin&#8230;"
+msgstr ""
+
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:1900
+msgid "Plugin install failed."
+msgstr ""
+
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:1901
+msgid "Plugin installed successfully."
+msgstr ""
+
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:1912
+msgid "Plugin activation failed."
+msgstr ""
+
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:2022
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:2023
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:2023
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:2032
+msgid "Show Details"
+msgstr ""
+
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:2023
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:2032
+msgid "Hide Details"
+msgstr ""
+
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:2024
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:2025
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:2029
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:2030
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:2031
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:2032
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:2033
+msgid "All installations have been completed."
+msgstr ""
+
+#: ../../library/inc/required-plugins/class-tgm-plugin-activation.php:2034
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../../library/inc/required-plugins/required-plugins.php:64
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: ../../library/inc/required-plugins/required-plugins.php:77
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#: ../../library/inc/vendor/envato-wtl/class-envato-protected-api.php:67
+msgid "Please enter your Envato Marketplace Username."
+msgstr ""
+
+#: ../../library/inc/vendor/envato-wtl/class-envato-protected-api.php:71
+msgid "Please enter your Envato Marketplace API Key."
+msgstr ""
+
+#: ../../library/inc/vendor/envato-wtl/class-envato-protected-api.php:96
+msgid "The API \"set\" is a required parameter."
+msgstr ""
+
+#: ../../library/inc/vendor/envato-wtl/class-envato-protected-api.php:167
+msgid "The Envato Marketplace \"item ID\" is a required parameter."
+msgstr ""
+
+#: ../../library/inc/vendor/envato-wtl/class-envato-wordpress-theme-upgrader.php:286
+msgid "Downloading upgrade package from the Envato API&#8230;"
+msgstr ""
+
+#: ../../library/inc/vendor/envato-wtl/class-envato-wordpress-theme-upgrader.php:297
+msgid "Downloading install package from the Envato API&#8230;"
+msgstr ""
+
+#: ../../templates/components/blog-single-author-box.php:33
+msgid "Published"
+msgstr ""
+
+#: ../../templates/components/blog-single-author-box.php:39
+msgid "Categories"
+msgstr ""
+
+#: ../../templates/components/blog-single-author-box.php:47
+#: ../../templates/components/blog-single-author-box.php:63
+#, php-format
+msgid "View all posts in %s"
+msgstr ""
+
+#: ../../templates/components/portfolio-head.php:25
+msgid "Filter By..."
+msgstr ""
+
+#: ../../templates/post-templates/blog-head-image.php:3
+#: ../../templates/post-templates/blog-head-quote.php:10
+#: ../../templates/post-templates/blog-head.php:3
+#, php-format
+msgid "Read more about %s"
+msgstr ""
+
+#: ../../templates/post-templates/blog-head-quote.php:15
+#: ../../templates/post-templates/single-head-quote.php:12
+msgid "See more about"
+msgstr ""

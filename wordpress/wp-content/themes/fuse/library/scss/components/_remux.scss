@@ -1,0 +1,14 @@
+// remux
+@include media(to 1450px) {
+  html {
+    font-size: 100%;
+  }
+}
+@include remux(hand, lap, 16px, 18px);
+@include remux(lap, desk, 16px, 18px);
+@include remux(desk, 2600px, 18px, 24px);
+@include media(from 2600px) {
+  html {
+    font-size: percentage(24px/16px);
+  }
+}

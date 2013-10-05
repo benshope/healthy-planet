@@ -1,0 +1,224 @@
+.side-testimonial,
+.testimonial-author,
+.testimonial-author_name,
+.testimonial-author_position,
+.testimonial-avatar {
+	@include transition(all .2s bezier(easeInOutSine));
+}
+
+.shc.testimonial {
+	
+	p, .testimonial_author {
+		display: inline;
+	}
+
+	.author_name {
+		color: $grayLight;
+		white-space: nowrap;
+		position: relative;
+		@include fs(18px);
+		@include rem(padding-left, 55px);
+		border: 0;
+
+		&:before {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0;
+			@include rem(left, 10px);
+			@include rem(width, 35px);
+			height: 1px;
+			background: $grayLight;
+			@include rem(margin-top, 10px);
+			@include rem(margin-right, 15px);
+		}
+	}
+}
+
+//Testimonials
+
+.testimonials-list {
+	@extend %unstyled;
+	@extend %clearfix;
+	margin: 0;
+	color: $grayDarkest;
+
+	a:hover {
+		text-decoration: none;
+	}
+}
+
+.main-testimonial, .side-testimonial {
+	background: white;
+}
+
+.main-testimonial {
+	vertical-align: top;
+
+	& > .block-inner {
+		@include rem(padding, 30px 30px 0 30px);
+
+		@include media(from lap) {
+			@include rem(padding, 50px 30px 70px 72px);
+		}
+	}
+}
+
+.side-testimonial {
+	vertical-align: top;
+}
+
+a.side-testimonial:hover {
+		//Enable Hover Effect
+		@include media(from lap) {
+			@include opacity(.9);
+			background-color:$accentColor;
+
+			.testimonial-author {
+				.testimonial-author_name, .testimonial-author_position {
+					@include opacity(1);
+					color: white;
+				}
+			}
+
+			.testimonial-avatar {
+				@include opacity(.7);
+			}
+		}
+		@include media(to hand) {
+			background:$white !important;
+		}
+	}
+
+.testimonial-content {
+	@include rem(margin-left, 168px);
+	@include rem(font-size, 24px);
+	position: relative;
+
+	@include media(to 1450px) {
+		@include rem(margin-left, 84px);
+		.testimonial-quotemark {
+			@include rem(margin-right, 23px);
+		}
+	}
+
+	@include media(to hand) {
+		@include rem(margin-left, 54px);	
+	}
+}
+
+.testimonial-avatar {
+	display: block;
+	width: 40%;
+	float: left;
+	overflow: hidden;
+	@include rem(max-height, 300px);
+
+	img {
+		min-width: 100%;
+		height: 100%;
+		width: auto;
+		max-width: none;
+	}
+
+	@include media(to hand) {
+		display: none;
+	}
+}
+
+.testimonial-author {
+	@include rem(padding, 10px 30px 120px 80px);
+
+	@include media(from lap) {
+		margin-left: 40%;
+		@include rem(padding, $unit $unit/2 $unit $unit);
+	}
+}
+
+.testimonial-author_name {
+	color: $grayDarker;
+	@include fs(24px);
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 0.125em;
+}
+
+.testimonial-author_position {
+	@include rem(margin-top, $unit/2);
+	@include fs(18px);
+	color: $gray;
+}
+
+.testimonials-slider {
+	@extend %clearfix;
+	position: relative;
+	height: auto !important;
+
+	.flex-control-nav {
+		@extend %unstyled;
+		@extend %clearfix;
+		position: absolute;
+		//@include rem(bottom, $unit);
+		bottom: 40px;
+		@include rem(left, 80px);
+		text-indent: -999em;
+		z-index: 30;
+
+		& > li {
+			float: left;
+			@include rem(width, 11px);
+			@include rem(height, 11px);
+			@include rem(margin-right, 11px);
+
+			& > a {
+				display: block;
+				@include rem(width, 7px);
+				@include rem(height, 7px);
+				@include border-radius(500px);
+				position: relative;
+				background-color: $grayLight;
+				cursor: pointer;
+
+				&.flex-active {
+					@include rem(width, 11px);
+					@include rem(height, 11px);
+					@include rem(top, -2px);
+					@include rem(left, -2px);
+					background-color: $gray;
+				}
+			}
+		}
+		@include media(from lap) {
+			@include rem(left, 242px);
+		}
+		@include media(lap 1450px) {
+			@include rem(left, 160px);
+		}
+	}
+}
+
+.testimonial-quotemark {
+	@include rem(font-size, 250px);
+	font-weight: normal;
+	position: absolute;
+	top: 0; right: 100%;
+	display: block;
+	line-height: 0.83;
+	@include rem(margin-right, 2*$unit);
+
+	@include media(to hand) {
+		@include rem(font-size, 150px);
+	}
+}
+
+.testimonials-list-item {
+	@extend %easeInOutQuad;
+	@include opacity(0);
+	z-index: 10;
+	// margin: 0 !important;
+
+	&.flex-active-slide {
+		@include opacity(1);
+		z-index: 20;
+	}
+}

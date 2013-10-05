@@ -1,0 +1,17 @@
+// Latest Posts Widget Slider
+.latest-posts-title {
+	color: white;
+	@include fs(16px);
+	padding-bottom: 0;
+}
+
+.latest-posts-date {
+	color: #7f8385;
+	@include fs(14px);
+	font-style:italic;
+}
+
+.latest-posts-permalink {
+	display: block;
+	border: 0;
+}

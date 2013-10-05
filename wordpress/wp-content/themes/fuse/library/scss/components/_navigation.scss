@@ -1,0 +1,271 @@
+%menu {
+	list-style: none;
+	padding: 0;
+}
+
+%menu-horizontal {
+	@extend %clearfix;
+
+	& > li {
+		display: inline-block;
+		float: left;
+	}
+}
+
+.header-transparent .site-mainmenu > li {
+	@extend %easeInOutQuad;
+}
+
+.header-transparent .site-mainmenu > li:hover {
+	//background: $grayDarkest; 
+}
+
+.site-mainmenu {
+	@extend %unstyled;
+	@extend %menu;
+	@extend %menu-horizontal;
+	margin: 0;
+	padding:0;
+	float: left;
+
+	a {
+		color: white;
+		font-weight: bold;
+		letter-spacing: 0.25em;
+		border: 0;
+		text-transform: uppercase;
+
+		&, &:after {
+			@include transition(all .3s);
+		}
+	}
+
+	li:hover {
+		& > a {
+			@extend %accentColor;
+		}
+	}
+
+	& > li {
+		position: relative;
+
+		& > a {
+			display: table-cell;
+			@include rem(padding-left, 22px);
+			@include rem(padding-right, 22px);
+			vertical-align: middle;
+			text-align: center;
+
+			@include media(to 900px) {
+				@include rem(padding-left, 12px);
+				@include rem(padding-right, 12px);
+			}
+
+			&:hover {
+				text-decoration: none;
+			}
+
+			.lt-ie8 & {
+				height: auto;
+			}
+		}
+
+		// Styling menu items that are the current page
+		&.current-menu-parent > a,
+		&.current_page_item > a,
+		&.current-menu-item > a,
+		.current-menu-item > a,
+		&.current_page_parent > a {  
+			@extend %accentColor;
+		}
+		// Styling menu items that have sub-menus
+		&.menu-parent-item:hover a {
+			&:after {
+				@include rotate(-45deg);
+			}
+		}
+
+		&.menu-parent-item {
+
+			& > a:after {
+				content: "";
+				@include rem(width, 5px);
+				@include rem(height, 5px);
+				display: inline-block;
+				border-color: $white;
+				border-style: solid;
+				@include rem(border-width, 2px 2px 0 0);
+				@include rotate(135deg);
+				@include rem(margin-left, 10px);
+				position: relative;
+				@include rem(top, -4px); left: 0;
+				@include transition(all 0.2s);
+			} 
+
+			&:hover {
+
+				& > a {
+
+					&:after {
+						@extend %accentBorderColor;
+					}
+				}
+			}
+		}
+
+	&:hover {
+
+		& > ul.sub-menu, & > ul.sub-menu li:hover > ul.sub-menu  {
+			overflow: visible;
+			opacity: 1;
+			// max-height: 100%;
+			margin-top: 0;
+			@include media(0 lap) { 
+				display:block;
+			}
+
+		}
+	}
+
+	// Sub Menus styling
+	ul.sub-menu {
+		overflow:hidden;
+		opacity:0;
+		max-height:0;
+		// display: none;
+		float: left;
+		@include rem(width, 210px);
+		@include rem(padding, 8px 0);
+		position: absolute;
+		top: 90%;
+		left: 0;
+		@include rem(margin-top, -10px);
+		z-index: 99999;
+		background: $grayDark;
+		@include transition(all 0.15s);
+		@include perspective(1000);
+		@include backface-visibility(hidden);
+
+		&:before {
+			content: "";
+			position: absolute;
+			z-index: 100;
+			border: solid transparent;
+			height: 0;
+			width: 0;
+			pointer-events: none; 
+			@include rem(border-width, 12px);
+			border-bottom-color: $grayDark;
+			@include rem(top, -23px);
+			@include rem(left, 14px);
+		}
+
+		@include media(0 lap) {
+			height:auto;
+			opacity:1;
+			display:none;
+		}
+
+		li {
+			@extend %unstyled;
+			width: 100%;
+			float:left;
+			
+			&:hover {
+				
+				a {
+					text-decoration:none;
+				}
+			}
+		}
+
+		a {
+			@include fs(15px);
+			font-weight:300;
+			line-height: 1.3;
+			text-transform:none;
+			padding: 0.8em 1em;
+			width: 100%;
+			float: left;
+			background: $grayDark;
+		}
+
+		// 3rd level sub-menu
+		ul {
+			background-color: $grayDarker;
+			padding: 0;
+
+			&:before {
+				display: none;
+			}
+		}
+
+		li.menu-parent-item {
+			position:relative;
+			float: left;
+
+			ul.sub-menu {
+				left:100%;
+				top:0; 
+			}
+
+			& > a:after {
+				content: "";
+				@include rem(width, 5px);
+				@include rem(height, 5px);
+				display: block;
+				position: absolute;
+				@include rem(top, 18px);
+				@include rem(right, 15px);
+				border-color: white;
+				border-style: solid;
+				@include rem(border-width, 1px 1px 0 0);
+				@include rotate(45deg);
+			}
+
+			&:hover a {
+				&:after {
+					@extend %accentBorderColor;
+				}
+			}
+		}
+	}
+
+	ul {
+		right: 100%;
+		top: 0;
+		list-style:none;
+
+		@include media(0 1340px) {
+			@include rem(width, 225px);
+			left:-100%;
+		}
+	}
+}
+
+	.wrapper-header-small & a {
+		@include fs(16px);
+	}
+}
+
+.menu-footer_social {
+	@extend %menu;
+	@extend %menu-horizontal;
+	margin: 0;
+
+	& > li {
+
+		& > a {
+			border: 0;
+			color: $gray;
+			@include rem(margin-right, 30px);
+
+			&:hover {
+				color: $grayLighter;
+			}
+			i {
+				@include fs(29px);
+			}
+		}
+	}	
+}

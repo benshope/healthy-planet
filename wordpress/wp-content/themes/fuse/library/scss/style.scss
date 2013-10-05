@@ -1,0 +1,215 @@
+@charset "UTF-8";
+
+@import "compass";
+
+$fontAwesomePath: "fonts";
+
+// dependencies
+@import "vendor/normalize/normalize";
+@import "vendor/modular-scale/modular-scale";
+@import "vendor/font-awesome/font-awesome";
+@import "vendor/magnific-popup/main";
+
+// settings 
+@import "variables";
+@import "settings";
+@import "theme";
+@import "vendor/greedy/index";  
+
+@mixin font-style($style) {
+	@if $style == italic {
+		font-family: "Open Sans", sans-serif;
+		font-style: italic;
+		letter-spacing: .09em;
+	} @else { 
+		font-family: "Raleway", sans-serif; 
+		font-style: italic;  
+	} 
+}
+
+@mixin verticalGrid($ratio: $lineHeightBase) {
+	@include background-image(linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0) 96%, rgba(0,0,0,.1) 98%, rgba(0,0,0,.1) 100%, rgba(0,0,0,0)));
+	@include background-size($ratio * 1rem $ratio * 1rem);
+} 
+
+html {
+	font-size:90%;
+} 
+body { 
+	background: white; 
+}
+
+img {
+	display: block; 
+	max-width: 100%;
+	height: auto;
+}
+
+#page {
+	// overflow: hidden;
+
+	.l-boxed & {
+		width: $gridWidth; 
+		margin: 0 auto;
+	}
+}
+@import "components/core-classes";
+@import "components/typography";
+@import "components/layout";
+@import "components/header";
+@import "components/navigation";
+@import "components/side";
+@import "components/footer";
+@import "components/widgets";
+@import "components/offcanvas";
+ 
+@import "components/remux";
+
+@import "components/slider";
+@import "components/featured-image";
+@import "components/portfolio";
+@import "components/post";
+@import "components/comments";
+@import "components/sidebars";
+@import "components/font-entypo"; 
+@import "components/font-linecons"; 
+@import "components/block-colors"; 
+@import "components/helpful-classes";
+@import "components/audio-video-player"; 
+// @import "components/offcanvas";
+
+@import "shortcodes/progressbar";
+@import "shortcodes/teammember";
+@import "shortcodes/arrow";
+@import "shortcodes/tabs";
+@import "shortcodes/icon";
+@import "shortcodes/testimonial"; 
+ 
+@import "plugins/wpcf7";
+
+a {
+	text-decoration: none;
+	@extend %accentColor;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.alpha, .beta {
+	@include rem(padding, $unit/2 0);
+}
+
+.gama, .delta {
+	@include rem(padding, $unit/2 0);
+}
+
+.block {
+	%heading {
+		text-transform: uppercase;
+		letter-spacing: 0.125em;
+		font-weight: 800;
+	}
+}
+
+%btn, %field {
+	display: inline-block;
+    vertical-align: middle;
+    white-space: nowrap;
+    font-family: inherit;
+    border: none;
+    margin: 0;
+	@include fs(14px);
+}
+
+%field {
+	padding: 0.5em;
+	background: white;
+	color: $gray;
+}
+
+%btn {
+    cursor: pointer;
+	padding: 0.55em 1.5em 0.45em;
+	text-transform: uppercase;
+	background: $grayDarker;
+	color: white;
+	font-weight: bold;
+	letter-spacing: 3px;
+	@include border-radius(2px);
+
+    &, &:hover {
+        text-decoration: none;
+    }
+
+    &:active, &:focus {
+        outline: none;
+    }
+
+    &:hover, &.btn-primary {
+    	@extend %accentBgColor;
+    }
+}
+
+.btn--natural{
+    vertical-align: baseline;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+input[type="text"],
+textarea {
+	@extend %field;
+}
+
+.btn, #comment-submit {
+	@extend %btn;
+}
+
+#searchform {
+	@extend %clearfix;
+	background: white;
+
+	.field {
+		width: 70%;
+		margin-right: -70%;
+	}
+
+	.btn {
+		float: right;
+		position: relative;
+	}
+}
+
+.featuredworks-title {
+	padding: 0;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 0.125em;
+	font-weight: bold;
+}
+
+.side-featuredworks {
+	@extend .side-footer_twitter;
+}
+
+.headings-uc {
+
+	%heading {
+		text-transform: uppercase;
+		letter-spacing: 0.125em;
+		font-weight: bold;
+
+	}
+
+	.alpha, .beta {
+		padding-top: 0;
+	}
+}
+
+.page-header-videohtml-wrap {
+	margin: 15px auto;
+	text-align: center;
+}
+
+@import "shame";

@@ -1,0 +1,486 @@
+.hidden {
+	display: none;
+}
+
+.clearfix {
+  @extend %clearfix;
+}
+
+.wrapper {
+	overflow: hidden;
+
+	&.wrapper-header-small {
+		overflow: visible;
+	}
+}
+
+.wrapper-content {
+	// add background-color to overlap fixed featured image
+	position: relative;
+	background-color: white;
+}
+
+.wrapper-body {
+	background: white;
+	position: relative;
+	z-index: 999;
+}
+
+.wrapper-footer {
+	position: relative;
+	z-index: 999;
+}
+
+.slides {
+	@extend %unstyled; 
+}
+
+
+.portfolio-rows {
+	@include perspective(1000px);
+	@include transform-style(preserve-3d);
+	@include backface-visibility(hidden);
+}
+
+.portfolio-rows .come-in {
+	@include opacity(1);
+	@include transform(translateY(600px));
+	-webkit-animation: come-in 0.8s ease forwards;
+	   -moz-animation: come-in 0.8s ease forwards;
+	     -o-animation: come-in 0.8s ease forwards;
+	        animation: come-in 0.8s ease forwards;
+}
+
+.go-out {
+	@include transform(translateY(600px));
+	-webkit-animation: go-out 0.3s ease forwards;
+	   -moz-animation: go-out 0.3s ease forwards;
+	     -o-animation: go-out 0.3s ease forwards;
+	        animation: go-out 0.3s ease forwards;
+}
+
+.portfolio-rows .block.already-visible {
+	@include opacity(1);
+	@include transform(none);
+	-webkit-animation: none;
+	   -moz-animation: none;
+	     -o-animation: none;
+	        animation: none;
+}
+
+@-webkit-keyframes come-in {
+  to {
+	@include opacity(1);
+  	-webkit-transform: translateY(0);
+  }
+}
+@-moz-keyframes come-in {
+  to {
+	@include opacity(1);
+  	-moz-transform: translateY(0);
+  }
+}
+@-o-keyframes come-in {
+  to {
+	@include opacity(1);
+  	-o-transform: translateY(0);
+  }
+}
+
+@keyframes come-in {
+  to {
+	@include opacity(1);
+  	transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes go-out {
+	0% {
+		-webkit-transform: none;
+		@include opacity(1);
+	}
+	100% {
+		-webkit-transform: scale(.75);
+		@include opacity(0);
+	}
+}
+@-moz-keyframes go-out {
+	0% {
+		-moz-transform: none;
+		@include opacity(1);
+	}
+	100% {
+		-moz-transform: scale(.75);
+		@include opacity(0);
+	}
+}
+@-o-keyframes go-out {
+	0% {
+		-o-transform: none;
+		@include opacity(1);
+	}
+	100% {
+		-o-transform: scale(.75);
+		@include opacity(0);
+	}
+}
+@keyframes go-out {
+	0% {
+		transform: none;
+		@include opacity(1);
+	}
+	100% {
+		transform: scale(.75);
+		@include opacity(0);
+	}
+}
+
+.video-wrap, .audio-wrap {
+	@include rem(margin, 0 0 $unit);
+
+	iframe {
+		display: block;
+	}
+
+	.portfolio-row & {
+		margin-bottom: 0;
+	}
+}
+
+.portfolio-rows {
+	@extend %unstyled;
+	margin: 0;
+}
+
+.no-transition {
+	@include transition(none !important);
+}
+
+//Contact Map
+.contact-info {
+	& {
+		display:none;
+	}
+	.infoBox & {
+		display:block;
+	}
+	img {
+
+	}
+	.pin_ring {
+		width: 48px;
+		height: 48px;
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		border: 4px solid $accentColor;
+		border-radius: 500px;
+		box-shadow: 0 0 5px #a0eaff;
+		/* Animate */
+		-webkit-animation-name: pulse;
+		-webkit-animation-duration: 1s;
+		-webkit-animation-iteration-count: infinite;
+		-webkit-animation-timing-function: ease-out;
+		-moz-animation-name: pulse;
+		-moz-animation-duration: 1s;
+		-moz-animation-iteration-count: infinite;
+		-moz-animation-timing-function: ease-out;
+		-o-animation-name: pulse;
+		-o-animation-duration: 1s;
+		-o-animation-iteration-count: infinite;
+		-o-animation-timing-function: ease-out;
+		animation-name: pulse;
+		animation-duration: 1s;
+		animation-iteration-count: infinite;
+		animation-timing-function: ease-out;
+		&.pin_1 {
+			border-width:4px;
+		}
+		&.pin_2 {
+			width:100px;
+			height:100px;
+			top:-26px;
+			left:-26px;
+			border-width:10px;
+		}
+	}
+}
+
+/* The animation */
+/* WebKit/Safari and Chrome */
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(0.3);
+        transform: scale(0.3);
+        opacity: 0.5;
+    }
+    
+    80% {
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+        opacity: 0;
+    }
+    
+    100% {
+        -webkit-transform: scale(2.5);
+        transform: scale(2.5);
+        opacity: 0;
+    }    
+}
+/* Gecko/Firefox */
+@-moz-keyframes pulse {
+    0% {
+        -moz-transform: scale(0.3);
+        transform: scale(0.3);
+        opacity: 0.5;
+    }
+    
+    80% {
+        -moz-transform: scale(1.5);
+        transform: scale(1.5);
+        opacity: 0;
+    }
+    
+    100% {
+        -moz-transform: scale(2.5);
+        transform: scale(2.5);
+        opacity: 0;
+    }    
+}
+/* Presto/Opera */
+@-o-keyframes pulse {
+    0% {
+        -o-transform: scale(0.3);
+        transform: scale(0.3);
+        opacity: 0.5;
+    }
+    
+    80% {
+        -o-transform: scale(1.5);
+        transform: scale(1.5);
+        opacity: 0;
+    }
+    
+    100% {
+        -o-transform: scale(2.5);
+        transform: scale(2.5);
+        opacity: 0;
+    }    
+}
+/* Standard */
+@keyframes pulse {
+    0% {
+        transform: scale(0.3);
+        opacity: 0.5;
+    }
+    
+    80% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+    
+    100% {
+        transform: scale(2.5);
+        opacity: 0;
+    }    
+}
+
+//Show s-visible elements
+.s-monitor.s-visible {
+	opacity: 1;
+	@include transform(scale, 1);
+}
+.progressbar.s-monitor.s-visible .progressbar-progress .progressbar-tooltip {
+	opacity: 1;
+}
+
+
+// Shame to the Maxx 
+footer .widget-tweets-tweet-content {
+	@include rem(height, 30px);
+	overflow: hidden;
+
+	@include media(to lap) {
+		height: auto !important;
+		overflow: visible;
+	}
+}
+
+.twitter-footer {
+	@include media(to lap) {
+		.flex-direction-nav {
+			display: none; 
+		}
+
+		.icon-twitter.icon-twitter_footer {
+			display: none;
+		}
+	}
+}
+
+// Media elements
+.mejs-container {
+	margin-bottom: 0;
+	background: $grayDarkest;
+
+	.mejs-controls {
+		background: $grayDarker;
+		@include border-radius(0);
+
+		div {
+			background: none;
+		}
+
+		div.mejs-horizontal-volume-slider {
+			width: 60px;
+		}
+	}
+
+	.mejs-time-rail .mejs-time-total,
+	.mejs-horizontal-volume-slider .mejs-horizontal-volume-total {
+		background: $grayDarkest;
+		border: 0;
+	}
+
+	.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current {
+		height: 6px;
+	}
+
+	.mejs-horizontal-volume-slider .mejs-horizontal-volume-current,
+	.mejs-time-rail span.mejs-time-current,
+	.mejs-time-rail span.mejs-time-loaded,
+	.mejs-time-rail span.mejs-time-buffering {
+		height: 6px;
+	}
+
+	.mejs-controls .mejs-time-rail .mejs-time-current,
+	.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current {
+		@extend %accentBgColor;
+	}
+
+	.mejs-overlay-button {
+		background-position: 0 0;
+	}
+
+	.mejs-overlay:hover .mejs-overlay-button {
+		//background-position: 0 100px;
+	}
+}
+
+
+.header-quote-content {
+	@include rem(max-width, 1000px);
+	margin: 0 auto;
+
+	blockquote {
+		@include fs(42px);
+	}
+}
+
+.main-content {
+	background-color: white;
+	width: 100%;
+	display: block;
+	// overflow: hidden;
+}
+
+.wp-smiley {
+	display: inline;
+}
+
+.sticky{
+
+}
+
+.gallery-caption{
+
+}
+
+.alignright{
+
+}
+
+.alignleft {
+
+}
+
+.aligncenter {
+
+}
+
+.page-header-video-wrap { 
+	@include rem(max-width, 1200px);
+	margin: 0 auto;
+}
+
+//Portfolio Grid Fix for Firefox
+@include media(from lap) {
+
+	.block1.lap-push4 {-moz-transform: translateX(percentage(1));}
+	.block1.lap-push8 {-moz-transform: translateX(percentage(2));}
+	.block2.lap-push4 {-moz-transform: translateX(percentage(1/2));}
+	.block2.lap-push8 {-moz-transform: translateX(percentage(1));}
+
+	.block1.lap-pull4 {-moz-transform: translateX(percentage(-1));}
+	.block1.lap-pull8 {-moz-transform: translateX(percentage(-2));}
+	.block2.lap-pull4 {-moz-transform: translateX(percentage(-1/2));}
+	.block2.lap-pull8 {-moz-transform: translateX(percentage(-1));}
+}
+
+//Caption text on image align left
+.alignleft .wp-caption-text  {
+	width:150px;
+	left:-165px;
+}
+.alignright .wp-caption-text {
+	position: relative;
+	left: 0;
+	width: 100%;
+	text-align: left;
+	padding-top: 5px;
+}
+
+pre {
+	max-width:600px;
+}
+
+* {
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+}
+
+.lp-image-link {
+
+	@include media(from lap) {
+		border: 0;
+		position: absolute;
+		top: 100%;
+		width: 100%;
+	}
+}
+
+.lp-image {
+	@include media(from lap) {
+		display: none;
+	}
+}
+
+.lp-image-dummy {
+	@include media(from lap) {
+		padding-top: 50%;
+	}
+}
+
+.latest-posts-homepage {
+  @include media(from lap) {
+    .portfolio-row {
+      margin-bottom: 16.5%;
+    }
+  }
+}
+
+#gmap {
+  @include rem(min-height, 300px);
+}
+// @debug "done!";

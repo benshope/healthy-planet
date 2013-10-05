@@ -1,0 +1,362 @@
+.portfolio-rows {
+	@extend %unstyled;
+	margin: 0;
+	@include fs(15px);
+	color:$grayDark;
+	font-weight: 500;
+	letter-spacing: 1px;
+	background:$white;
+	overflow: hidden;
+
+	img {
+		width: 100%;
+	}
+
+	.portfolio-archive {
+		.loading-gif {
+			width:100%;
+			height:100%;
+			position: absolute;
+			top:0;left:0;
+			z-index: 999999;
+			background-color: rgba(255,255,255,0.8);
+			background-image: url('../images/loader2.gif');
+			background-position: 50% 15px;
+			background-repeat: no-repeat;
+			opacity: 0.8;
+		}
+	}
+}
+
+
+.portfolio-row {
+	position: relative;
+
+	.block {
+		@include media(from lap) {
+			@include background-size(cover);
+			background-position: center;
+			background-repeat:no-repeat;
+
+			img {
+				display: none;
+			}
+		}
+	}
+
+	.portfolio-image-wrapper {
+
+		img {
+			display: block;
+			width:100%;
+		}
+	}
+
+	.block-image {
+		@include transition(all 0.2s);
+		border: 0;
+
+		&:hover {
+			@include opacity(0.85);
+		}
+	}
+
+	.block > .block-image {
+		display: block;
+	}
+}
+
+.portfolio-item_title {
+	text-transform: uppercase;
+	letter-spacing: 0.125em;
+	font-weight: bold;
+	a {
+		color:$grayDark;
+		
+		&:hover {
+			@extend %accentColor;
+			text-decoration: none;
+		}
+	}
+}
+
+.portfolio-item_title-separator {
+	background: none;
+	@include rem(width, $unit);
+	@include rem(margin-bottom, ($unit - 3px));
+	border: 0;
+	border-top: 3px solid $grayDarkest;
+	text-align: left;
+	float: left;
+	display: block;
+}
+
+.portfolio-item_desc {
+	clear: both;
+}
+
+.portfolio-item_categories {
+	@extend %menu;
+	@extend %menu-horizontal;
+	margin: 0;
+}
+
+.portfolio-item_cat {
+	@include rem(margin-right, $unit);
+	text-transform: uppercase;
+	@include fs(12px);
+	color: $grayLight;
+}
+
+.portfolio-item_cat-link {
+	color: #ababab;
+	&:hover {
+		@extend %accentColor;
+	}
+}
+
+.isotope {
+	@include transition(height .8s bezier(easeInOutQuad));
+}
+
+.isotope-item {
+	@extend %easeInOutQuad;
+}
+
+.filter-by_list, .portfolio_category_list {
+	@extend %menu;
+	@extend %menu-horizontal;
+	margin: 0;
+	float: right;
+	font-weight: bold;
+	letter-spacing: 0.125em;
+	font-size: 16px;
+	font-size: rem(16px);
+	text-transform: uppercase;
+
+	li {
+		a {
+			display: block;
+			color: white;
+			&:hover {
+				@extend %accentColor;
+				text-decoration: none;
+			}
+		}
+		
+		&.current-item {
+			a {
+				@extend %accentColor;
+			}
+		}
+	}
+
+	@include media(to hand) {
+		li { 
+			width:50%;
+			text-align:left;
+			padding:4px 0;
+		}
+	}
+}
+
+.filter-by_list-item {
+	display: inline-block;
+	@include rem(padding-left, $unit);
+	
+	.filter-by_link {
+		display: block;
+		color: white;
+	}
+}
+
+.filter-by_link {
+	display: block;
+	color: white;
+}
+
+// ARROWS
+.arrow {
+	position: relative;
+
+	&:before {
+		position: absolute;
+		z-index: 100;
+		border: solid transparent;
+		content: "";
+		height: 0;
+		width: 0;
+		pointer-events: none;
+		border-width: 12px;
+	}
+}
+
+.arrow-top {
+	
+	&:before {
+		@include rem(left, 48px + 5px);
+		bottom: 100%;
+		border-bottom-color: white;
+	}
+
+	&.block-inner_first:before {
+		@include rem(left, 72px + 5px);
+	}
+}
+
+.arrow-right {
+	&:before {
+		@include rem(top, 36px + 5px);
+		left: 100%;
+		border-left-color: white;
+	}
+}
+
+.arrow-bottom {
+
+	&:before {
+		@include rem(left, 48px + 5px);
+		top: 100%;
+		border-top-color: white;
+	}
+
+	.block-color &:before {
+		@extend %accentBorderTopColor;
+	}
+
+	&.block-inner_first:before {
+		@include rem(left, 72px + 5px);
+	}
+}
+
+.arrow-left {
+	&:before {
+		@include rem(top, 36px + 5px);
+		right: 100%;
+		border-right-color: white;
+	}
+}
+
+// Portfolio Navigation
+
+.portfolio-navigation {
+	@include rem(padding-top, 48px);
+	@include rem(padding-bottom, 48px);
+}
+
+.previous-project-link, .next-project-link, .load_more {
+	letter-spacing: 0.125em;
+	text-transform: uppercase;
+	font-weight: normal;
+	@include fs(54px);
+
+	a {
+		display: block;
+		position: relative;
+		color: $gray;
+		border: 0;
+		@include transition(color, 0.15s);
+
+		&:hover {
+			@extend %accentColor;
+			text-decoration: none;
+		}
+	}
+
+	span {
+		@extend %accentColor;
+	}
+
+	@include media(to 1450px) {
+		@include fs(48px);
+	}
+
+	@include media(to 600px) {
+		@include fs(36px);
+	}
+
+	@include media(to 320px) {
+		@include fs(24px);
+	}
+}
+
+%project-navigation-arrow {
+	content: "";
+	display: block;
+	position: absolute;
+	@include rem(width, 48px);
+	@include rem(height, 48px);
+	border: 2px solid transparent;
+	@extend %accentBorderTopColor;
+}
+
+.previous-project-link {
+	float: left;
+
+	a {
+		@include rem(padding-left, 60px);
+
+		&:before {
+			top: 0; left: 0;
+			@extend %project-navigation-arrow;
+			@extend %accentBorderLeftColor;
+			@include transform(rotateZ(-45deg));
+		}
+
+		&:hover {
+			@include rem(padding-left, 55px);
+		}
+	}
+}
+
+.next-project-link {
+	float: right;
+
+	a {
+		@include rem(padding-right, 60px);
+
+		&:after {
+			top: 0; right: 0;
+			@extend %project-navigation-arrow;
+			@extend %accentBorderRightColor;
+			@include transform(rotateZ(45deg));
+		}
+
+		&:hover {
+			@include rem(padding-right, 55px);
+		}
+	}
+}
+
+#infscr-loading {
+	display: none !important;
+	visibility: hidden;
+	text-align: center;
+
+	img {
+		display: none;
+	}
+}
+
+.load_more {
+	text-align: center;
+	@include rem(padding-bottom, $unit);
+ 
+	a {
+		&:before {
+			content:'';
+			display: block;
+			margin: 0 auto $unit;
+			margin-bottom: rem($unit);
+			width: 100px;
+			height: 9px;
+			background: url('../images/loader2.gif') top center no-repeat;
+			@extend %easeInOutQuad;
+			@include opacity(0);
+		}
+
+		&.loading:before {
+			@include opacity(1);
+		}
+	}
+}

@@ -1,0 +1,29 @@
+@import "variables";
+
+%accentColor {
+	color: $accentColor;
+}
+
+%accentBgColor {
+	background-color: $accentColor;
+}
+
+%accentBorderColor {
+	border-color: $accentColor;
+}
+
+%accentBorderTopColor {
+	border-top-color: $accentColor;
+}
+
+%accentBorderRightColor {
+	border-right-color: $accentColor;
+}
+
+%accentBorderBottomColor {
+	border-bottom-color: $accentColor;
+}
+
+%accentBorderLeftColor {
+	border-left-color: $accentColor;
+}

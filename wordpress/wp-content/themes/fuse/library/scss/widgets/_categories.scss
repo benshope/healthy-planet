@@ -1,0 +1,21 @@
+// Main Sidebar Categories
+.widget_categories {
+
+	& > ul {
+		@extend %clearfix;
+		border-bottom: 1px solid $grayLight;
+
+		& > li {
+			width: 50%;
+			float: left;
+			margin-bottom: -1px;
+
+			a {
+				color:$gray;
+				&:hover {
+					@extend %accentColor;
+				}
+			}
+		}
+	}
+}

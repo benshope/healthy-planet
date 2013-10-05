@@ -1,0 +1,205 @@
+// TWITER
+ul.widget-tweets {
+	@extend %unstyled;
+}
+
+.widget-tweets.slides {
+	@extend %unstyled;
+	@extend %clearfix;
+	@include rem(margin, 0 168px 0 84px);
+
+	.widget-area & {
+		margin: 0;
+		border-top: 0;
+	}
+
+	@include media(to lap) {
+		margin: 0;
+	}
+}
+
+.main {
+
+	.widget-tweets {
+		@include media(to hand) {
+			@include rem(padding-top, $unit);
+			@include rem(padding-bottom, $unit);
+		}
+	}
+
+	.widget-tweets-tweet {
+		position: relative;
+		@include rem(top, 5px); left: 0;
+	}
+	.widget-tweets-tweet-content {
+		position: relative;
+		@include rem(top, -6px); left: 0;
+	}
+}
+
+.widget_wpgrade_twitter_widget {
+	height: auto !important;
+
+	.widget-tweets-tweet {
+		border-bottom: 0;
+		padding: 0;
+	}
+
+	.twitter-tweet-meta {
+	}
+
+	.flex-control-paging {
+		@extend %unstyled;
+		display: block;
+		clear: both;
+		border: 0;
+
+		& > li {
+			display: inline-block;
+			@include rem(margin-right, 8px);
+			border-bottom: none;
+			padding: 0;
+
+			& > a {
+				display: block;
+				@include rem(width, 5px);
+				@include rem(height, 5px);
+				@include border-radius(5px);
+				@include border-radius(rem(5px));
+				text-indent: -999em;
+				background-color: $grayLight;
+				cursor: pointer;
+			}
+
+			&:hover > a, & > a.flex-active {
+				@include rem(width, 7px);
+				@include rem(height, 7px);
+				position: relative;
+				@include rem(top, 1px);
+				@include rem(left, 1px);
+				@include rem(margin, 0 -1px);
+				background-color: $gray;
+			}
+		}
+	}
+}
+
+//Footer Slider
+
+.twitter-footer_slider {
+	position: relative;
+	height: auto !important;
+
+	.flex-direction-nav {
+		@extend %unstyled;
+		@extend %clearfix;
+		position: absolute;
+		top: 50%; @include rem(right, 48px);
+		margin: 0;
+
+		& > li {
+			float: left;
+
+			& > a {
+				display: block;
+				@include rem(width, 20px);
+				@include rem(height, 20px);
+				@include rem(margin-top, -10px);
+				border: 2px solid transparent;
+				border-top-color: $grayLight;
+				color: transparent;
+
+				&:hover {
+					border-top-color: $gray;
+				}
+			}
+		}
+
+		.flex-prev {
+			border-left-color: $grayLight;
+			@include transform(rotateZ(-45deg));
+
+			&:hover {
+				border-left-color: $gray;
+			}
+		}
+
+		.flex-next {
+			border-right-color: $grayLight;
+			@include transform(rotateZ(45deg));
+
+			&:hover {
+				border-right-color: $gray;
+			}
+		}
+	}
+}
+
+li.widget-tweets-tweet {
+	@extend %clearfix;
+	@extend %easeInOutQuad;
+	@include fs(14px);
+	@include opacity(0);
+	visibility:hidden;
+
+	&.flex-active-slide {
+		@include opacity(1);
+		visibility:visible;
+	}
+}
+
+.twitter-screenname {
+	font-weight: 600;
+}
+
+.twitter-tweet-meta {
+	@extend %clearfix;
+
+	span {
+		float: left;
+		white-space: nowrap;
+	}
+}
+
+.widget-tweets-tweet-date {
+	color: $gray;
+	position: relative;
+	@include fs(13px);
+	@include rem(padding-left, 55px);
+
+	&:before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		@include rem(left, 10px);
+		@include rem(width, 35px);
+		height: 1px;
+		background: $grayLight;
+		@include rem(margin-top, 15px);
+		@include rem(margin-right, 15px);
+	}
+}
+
+.widget-tweets-tweet-content {
+	@include fs(14px);
+
+	@include media(to hand) {
+		@include fs(16px);
+	}
+}
+
+.twitter-username {
+	@include rem(padding-left, $unit/2);
+}
+
+.icon-twitter_footer {
+	@extend %accentColor;
+	@include rem(width, 56px);
+	@include rem(height, 56px);
+	@include rem(font-size, 48px);
+	@include rem(padding-top, 5px);
+	line-height: 1;
+	float: left;
+	vertical-align: middle;
+}

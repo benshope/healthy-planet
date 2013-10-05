@@ -1,0 +1,543 @@
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus  {outline: none;}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;} 
+
+/* FlexSlider Necessary Styles
+*********************************/ 
+.flexslider {position: relative; margin: 0; padding: 0;}
+.flexslider .slides > li {
+	// @todo
+	// display: none;
+	-webkit-backface-visibility: hidden;
+} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {width: 100%; display: block;}
+.flex-pauseplay span {text-transform: capitalize;}
+
+/* Clearfix for the .slides element */
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
+html[xmlns] .slides {display: block;} 
+* html .slides {height: 1%;}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {display: block;}
+
+
+/* FlexSlider Default Theme
+*********************************/
+
+
+/* Direction Nav */
+// .flex-direction-nav {*height: 0;}
+// .flex-direction-nav a {width: 30px; height: 30px; margin: -20px 0 0; display: block; background: url(images/bg_direction_nav.png) no-repeat 0 0; position: absolute; top: 50%; z-index: 10; cursor: pointer; text-indent: -9999px; opacity: 0; -webkit-transition: all .3s ease;}
+// .flex-direction-nav .flex-next {background-position: 100% 0; right: -36px; }
+// .flex-direction-nav .flex-prev {left: -36px;}
+// .flexslider:hover .flex-next {opacity: 0.8; right: 5px;}
+// .flexslider:hover .flex-prev {opacity: 0.8; left: 5px;}
+// .flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {opacity: 1;}
+// .flex-direction-nav .flex-disabled {opacity: .3!important; filter:alpha(opacity=30); cursor: default;}
+
+// /* Control Nav */
+// .flex-control-nav {width: 100%; position: absolute; bottom: -40px; text-align: center;}
+// .flex-control-nav li {margin: 0 6px; display: inline-block; zoom: 1; *display: inline;}
+// .flex-control-paging li a {width: 11px; height: 11px; display: block; background: #666; background: rgba(0,0,0,0.5); cursor: pointer; text-indent: -9999px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; box-shadow: inset 0 0 3px rgba(0,0,0,0.3);}
+// .flex-control-paging li a:hover { background: #333; background: rgba(0,0,0,0.7); }
+// .flex-control-paging li a.flex-active { background: #000; background: rgba(0,0,0,0.9); cursor: default; }
+
+// .flex-control-thumbs {margin: 5px 0 0; position: static; overflow: hidden;}
+// .flex-control-thumbs li {width: 25%; float: left; margin: 0;}
+// .flex-control-thumbs img {width: 100%; display: block; opacity: .7; cursor: pointer;}
+// .flex-control-thumbs img:hover {opacity: 1;}
+// .flex-control-thumbs .flex-active {opacity: 1; cursor: default;}
+
+@media screen and (max-width: 860px) {
+  .flex-direction-nav .flex-prev {opacity: 1; left: 0;}
+  .flex-direction-nav .flex-next {opacity: 1; right: 0;}
+}
+
+// DAFUQ
+
+.slide {
+	@include transition(opacity .3s ease-in-out);
+	@include opacity(0);
+
+	&.flex-active-slide {
+		@include opacity(1);
+	}
+}
+
+.flexslider.loading .slide {
+
+	&, &.flex-active-slide {
+		@include opacity(0);
+	}
+}
+
+.wrapper-featured-image .gallery_format_slider {
+	margin: 0;
+
+	.flex-direction-nav {
+		@extend %clearfix;
+		@extend %unstyled;
+		width: 100%;
+		position: absolute;
+		top: 50%; left: 0;
+		width: 100%;
+		margin: 0;
+
+		& > li {
+			@extend %clearfix;
+			background: none;
+			width: 50%;
+			@include rem(height, 40px);
+			float: left;
+			position: relative;
+			z-index: 9999;
+
+			& > a {
+				display: block;
+				background: none;
+				@include rem(width, 40px);
+				@include rem(height, 40px);
+				border: 8px solid transparent;
+				border-top-color: white;
+				// text-indent: -999em;
+				// huge scroll fix attempt
+				color: transparent;
+				@include rem(margin, -26px 40px 0);
+			}
+
+			.flex-prev {
+				float: left;
+				border-left-color: white;
+				@include transform(rotateZ(-45deg));
+			}
+
+			.flex-next {
+				float: right;
+				border-right-color: white;
+				@include transform(rotateZ(45deg));
+			}
+		}
+	}
+} 
+
+.homepage-slider {
+	background-color: $grayDarkest;
+	color: white;
+	overflow: hidden;
+
+	%heading {
+		color: white;
+		text-transform: uppercase;
+		letter-spacing: 0.125em;
+		font-weight: bold;
+	}
+
+	@include rem(font-size, 30px);
+	.alpha   {@include fs(87px)}
+	.beta    {@include fs(78px)}
+	.gama    {@include fs(70px)}
+	.delta   {@include fs(60px)}
+	.epsylon {@include fs(50px)}
+	.zeta    {@include fs(40px)}
+
+	@include media(to hand) {
+		@include rem(font-size, 24px);
+		.alpha   {@include fs(72px)}
+		.beta    {@include fs(60px)}
+		.gama    {@include fs(48px)}
+		.delta   {@include fs(32px)}
+		.epsylon {@include fs(24px)}
+		.zeta    {@include fs(21px)}		
+	}
+
+	@include media(to small) {
+		@include rem(font-size, 18px);
+		.alpha   {@include fs(32px)}
+		.beta    {@include fs(28px)}
+		.gama    {@include fs(24px)}
+		.delta   {@include fs(21px)}
+		.epsylon {@include fs(18px)}
+		.zeta    {@include fs(16px)}		
+	}
+
+	.slide {
+
+		&.flex-active-slide {
+			@include opacity(1);
+
+			.homepage-slider_slide-content {
+				@include transform(none);
+				@include opacity(1);
+			}
+		}
+	}
+
+	&:before {
+		content: "";
+		width: 80px;
+		height: 6px;
+	}
+
+	.flex-direction-nav {
+		@extend %clearfix;
+		@extend %unstyled;
+		position: absolute;
+		top: 50%; left: 0;
+		width: 100%;
+		margin: 0;
+
+		& > li {
+			@extend %clearfix;
+			width: 50%;
+			@include rem(height, 40px);
+			float: left;
+			position: relative;
+			z-index: 9997;
+
+			& > a {
+				display: block;
+				@include rem(width, 40px);
+				@include rem(height, 40px);
+				border: 8px solid transparent;
+				border-top-color: white;
+				// text-indent: -999em;
+				// huge scroll fix attempt
+				color: transparent;
+				@include rem(margin, -26px 40px 0);
+
+				@include media(to hand) {
+					@include rem(width, 40px);
+					@include rem(height, 40px);
+				}
+
+				@include media(to small) {
+					display: none;
+				}
+			}
+
+			.flex-prev {
+				float: left;
+				border-left-color: white;
+				@include transform(rotateZ(-45deg));
+			}
+
+			.flex-next {
+				float: right;
+				border-right-color: white;
+				@include transform(rotateZ(45deg));
+			}
+		}
+	}
+
+	.flex-control-paging {
+		@extend %unstyled;
+		margin: 0;
+		position: absolute;
+		bottom: 0; left: 0;
+		z-index: 9990;
+		width: 100%;
+		text-align: center;
+
+		& > li {
+			display: inline-block;
+			@include rem(width, 20px);
+			@include rem(height, 54px);
+			@include rem(margin, 0 5px);
+
+			& > a {
+				display: block;
+				@include rem(width, 16px);
+				@include rem(height, 16px);
+				position: relative;
+				@include rem(top, 2px);
+				@include rem(left, 2px);
+				@include border-radius(1000px);
+				border: 0;
+				text-indent: -999em;
+				background: $grayDark;
+				cursor: pointer;
+
+				&.flex-active {
+					@include rem(width, 20px);
+					@include rem(height, 20px);
+					top: 0; left: 0;
+					@extend %accentBgColor;
+
+					&:after {
+						content: "";
+						width: 0;
+						height: 0;
+						border: 10px solid transparent;
+						border-bottom-color: white;
+						position: absolute;
+						@include rem(top, 36px); left: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+.flexslider .slides .homepage-slider_image {
+	position: absolute;
+	top: 0; left: 0;
+	width: auto;
+	height: 100%;
+	z-index: 20;
+	max-width: none;
+}
+
+.homepage-slider_slide-wrap {
+	position: relative;
+	z-index: 30;
+	width: 100%;
+	height: 100%;
+	display: table;
+	@include rem(padding, 200px 0 120px);
+
+	@include media(to hand) {
+		@include rem(padding, 50px 0 20px);
+	}
+
+	@include media(to small) {
+		@include rem(padding, 100px 0 50px);
+	}
+}
+
+.homepage-slider_slide-content {
+	width: 100%;
+	height: 100%;
+	display:table-cell;
+	vertical-align:middle;
+	position: relative;
+	// @include rem(padding-top, 244px);
+	padding-left:14%;
+	padding-right:14%;
+
+	@include media(to hand) {
+		@include rem(padding, 0 72px);
+	}
+
+	@include media(to small) {
+		@include rem(padding, 0 16px);
+	}
+
+	@include transform(translateY(-10rem));
+	@include opacity(0);
+	@include transition(all .6s .3s bezier(easeInOutSine));
+
+	.btn {
+		display: inline-block;
+		@extend %accentBgColor;
+		position: relative;
+		@include rem(font-size, 28px);
+		padding: .25em 1.25em;
+		text-transform: none;
+		@include rem(margin, $unit 0);
+
+		@include media(to lap) {
+			@include rem(font-size, 24px);
+		}
+
+		@include media(to hand) {
+			@include rem(font-size, 21px);
+		}
+
+		&:after {
+			@extend %accentBorderTopColor;
+			content: "";
+			width: 0;
+			height: 0;
+			border: 10px solid transparent;
+			border-width: rem(10px);
+			position: absolute;
+			top: 100%;
+			@include rem(left, 10px);
+		}
+	}
+}
+
+.nav-filler {
+	position: absolute;
+	top: 0; left: 0;
+	height: 5px;
+	z-index: 30;
+	@include transition(all 0.6s);
+	@extend %accentBgColor;
+
+	&.s-loading {
+		@include transition(all 6s linear);
+	}
+
+	&.s-fast {
+		@include transition(all 0.01s);
+	}
+}
+
+.preloader {
+	width: 110px;
+	height: 10px;
+	display: block;
+	position: absolute;
+	top: 50%; left: 50%;
+	margin-top: -5px;
+	margin-left: -55px;
+	background: url('../images/preloader.gif') top left no-repeat;
+	@include opacity(0);
+	@include transition(all .2s ease-in-out);
+}
+
+.loading {
+
+	.preloader {
+		@include opacity(1);
+	}
+}
+
+
+
+.gallery_format_slider {
+	overflow: hidden;
+
+	&.loading {
+		overflow: hidden;
+		height: 600px;
+
+		.slides > dl {
+			height: 600px;
+			@include opacity(0);
+		}
+	}
+
+	.slides > dl {
+		@include opacity(1);
+	}
+
+	img {
+		width:100%;
+	}
+
+	.flex-direction-nav {
+		position:absolute;
+		@include rem(bottom, $unit);
+		@include rem(right, $unit);
+		margin: 0;
+		padding: 0 !important;
+		@include rem(width, 75px);
+
+		li:before {
+			content: "";
+		}
+
+		a {
+
+			& {
+				text-indent:-9999px;
+				display:block;
+				text-decoration:none;
+				background:$black;
+				color:#fff;
+				@include rem(padding, 3px 7px);
+				float:left;
+				@include rem(width, 33px);
+				@include rem(margin-right, 4px);
+			}
+
+			&:before {
+				font-family: "entypo";
+				font-weight: normal;
+				speak: none;
+				display: inline-block;
+				text-decoration: inherit;
+				width: 1em;
+				margin-right: .2em;
+				text-align: center;
+				font-variant: normal;
+				text-transform: none;
+				line-height: 1em;
+				margin-left: .2em;
+				text-indent:9999px;
+				content: "\e87c";
+			}
+
+			&.flex-next {
+				@include rem(padding-left, 9px);
+
+				&:before {
+					content: "\e87d";
+				}
+			}
+
+			&:hover {
+				@extend %accentBgColor;
+			}
+		}
+	}
+}
+
+// General Style for Sliders
+.wp-slider {
+	position: relative;
+
+	.slides, .flex-control-nav, .flex-direction-nav {
+		@extend %clearfix;
+		@extend %unstyled;
+		border: 0;
+		margin: 0;
+	}
+
+	.flex-control-paging {
+		@extend %unstyled;
+		display: block;
+		clear: both;
+
+		& > li {
+			display: inline-block;
+			@include rem(margin-right, 8px);
+			border-bottom: none;
+
+			& > a {
+				display: block;
+				@include rem(width, 5px);
+				@include rem(height, 5px);
+				@include border-radius(5px);
+				@include border-radius(rem(5px));
+				text-indent: -999em;
+				background-color: $grayLight;
+				cursor: pointer;
+				color: transparent;
+			}
+
+			&:hover > a, & > a.flex-active {
+				@include rem(width, 7px);
+				@include rem(height, 7px);
+				position: relative;
+				@include rem(top, 1px);
+				@include rem(left, 1px);
+				@include rem(margin, 0 -1px);
+				background-color: $gray;
+			}
+		}
+	}
+
+	.slides > .slide {
+		@include opacity(0);
+		@include transition(opacity .3s bezier(easeInOutQuad));
+		position: relative;
+		@include backface-visibility(hidden);
+		border-bottom: 0;
+		visibility:hidden;
+	}
+
+	.slides > .slide.flex-active-slide {
+		@include opacity(1);
+		visibility:visible;
+	}
+}

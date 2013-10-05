@@ -1,0 +1,73 @@
+.progressbar {
+  @include rem(margin, $unit 0 3/2*$unit);
+  @include scale(1);
+  opacity:1 !important; 
+}
+
+.progressbar-bar {
+  position: relative;
+  // overflow-x: hidden;
+  width: 100%;
+  @include rem(height, 5px);
+  @include box-shadow(rgba(0,0,0,.2) 0 1px inset);
+  background: #e6e6e5;
+}
+
+.progressbar-title {
+  @extend %heading;
+  @include fs(17px);
+  @include rem(margin-bottom, $unit/2);
+}
+
+.progressbar-progress {
+  @extend %accentBgColor;
+  position: absolute;
+  top: 0; left: 0;
+  width:0; 
+  @include rem(height, 5px);
+  @include transition(all 1s 1s cubic-bezier(0.645, 0.045, 0.355, 1.000));
+}
+
+.progressbar-marker {
+  position: absolute;
+  top: 0; left: 0;
+  @include rem(height, 5px);
+  border-right: 2px solid $white;
+}
+
+.progressbar-tooltip {
+  @include rem(font-size, 17px);
+  font-weight:800;
+  color: $grayDark;
+  text-align: center;
+  letter-spacing:1px;
+  
+  display: block;
+  @include rem(width, 56px);
+  
+  position: absolute;
+  @include rem(top, -40px); 
+  @include rem(right, -40px);
+ 
+  @include opacity(0);
+  @include transition(opacity .3s 1.4s ease-in);
+
+  &:after {
+    border: solid transparent;
+    content: " ";
+    height: 10px;
+    width: 10px;
+    @extend %accentBgColor;
+    
+    position: absolute;
+    @include rem(top, 34px);
+    @include rem(left, 6px);
+    
+    @include rotate(45deg);
+    pointer-events: none;
+    // border-color: rgba(0, 0, 0, 0);
+    // border-top-color: $grayDarker;
+    // @include rem(border-width, 4px);
+    // @include rem(margin-left, -4px);
+  }
+}

@@ -1,0 +1,8 @@
+// CONTACT WIDGET
+.widget-contact-details {
+	font-weight: bold;
+}
+
+.widget-contact-detail {
+	@include rem(margin-bottom, $unit);
+}

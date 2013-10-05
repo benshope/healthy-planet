@@ -1,0 +1,251 @@
+.team-member-container,
+.team-member-image,
+.team-member-description,
+.team-member-name,
+.team-member-position,
+.team-member-social-links {
+	@include transition(all .2s bezier(easeInOutSine));
+}
+
+.team-member-container {
+	@extend %clearfix;
+	background: white;
+	border-left-width: 0 !important;
+	@extend .span12;
+	@extend .desk-span6;
+	@include backface-visibility(hidden);
+	// @include rem(padding-bottom, 1000px);
+	// @include rem(margin-bottom, -1000px);
+
+	&:nth-child(odd) {
+		clear:both;
+	}
+	
+
+	//Add Borders and Image Alignment Feature (from Lap - min-width:1024px)
+	@include media(from desk) {
+		//Image Alignment
+		&.image-right {
+
+			.team-member-image {
+				&, img {
+					float: right;
+				}
+			}
+
+			.team-member-header,
+			.team-member-description,
+			.team-member-footer {
+				margin-left: 0;
+				@include rem(margin-right, 240px);
+			}
+		}
+
+		//Borders
+		& {
+			border-bottom: 10px solid transparent;
+		}
+		
+		.team-member-header1 {
+			border-top-color: $accentColor;;
+		}
+
+		&.border-none,
+		&.border-bottom {
+			.team-member-header {
+				border-top-color: transparent;
+				border-bottom-color: $accentColor;
+			}	
+		}
+
+		&.border-bottom {
+			border-bottom-color: $accentColor;
+		}		
+	}
+
+	&:hover {
+		//Enable Hover Effect
+		@include media(from lap) {
+			border-bottom-color: $accentColor;
+			background-color:$accentColor;
+			// @include opacity(.75);
+			color: white;
+
+			.team-member-social-links,
+			.team-member-description {
+				@include opacity(1);
+				color: white;
+			}
+
+			.team-member-image {
+				@include opacity(.7);
+			}
+
+			.team-member-name,
+			.team-member-position {
+				color: white;
+			}
+		}
+		@include media(to hand) {
+			background:$white !important;
+		}
+	}
+
+	@include media(to small) {
+		border-top: 10px;
+
+		.team-member-image {
+			width: 100%;
+			height: auto;
+			float: none;
+
+			img {
+				width: auto;
+				max-width: 100%;
+				min-height: 0;
+			}
+		}
+
+		.team-member-header,
+		.team-member-description,
+		.team-member-footer {
+			margin-left: 0;
+		}
+
+		.team-member-header {
+			border-top-color: transparent;
+		}
+
+		.team-member-footer {
+			position: static;
+		}
+
+		.team-member-social-links {
+			position: static;
+			@include rem(margin, $unit 0);
+		}
+	}
+}
+
+.team-member-image {
+	overflow: hidden;
+	@include rem(width, 240px);
+	@include rem(height, 300px);
+	margin-bottom: -10px;
+	float: left;
+
+	img {
+		display: block;
+		min-width: 100%;
+		min-height: 100%;
+		max-width: none;
+	}
+	@include media(from lap) {
+		//@include rem(width, 240px);	
+		//@include rem(height, 300px);
+	}
+}
+
+.team-member-header,
+.team-member-description,
+.team-member-footer {
+	@include rem(margin-left, 240px);
+	@include rem(padding-left, $unit);
+	@include rem(padding-right, $unit);
+	position: relative;
+	@include backface-visibility(hidden);
+}
+
+.team-member-header {
+	border-top: 10px solid transparent;
+	@extend %accentBorderTopColor;
+
+	@include media(to 1450px) {
+		h3 {
+			@include fs(19px);
+		}
+	}
+}
+.team-member-footer {
+	position:absolute;
+	left:0;
+	bottom:0;
+}
+
+.team-member-description {
+	
+	
+	@include rem(margin-bottom, 35px);
+	p:last-child {
+		margin-bottom:0;
+	}
+	@include media(to 1450px) {
+		@include fs(15px);
+		line-height:1.5;
+	}
+	@include media(from lap) {
+		@include opacity(0);
+		//color: white;
+	}
+}
+
+.team-member-position {
+
+	&, .block & {
+		text-transform: none;
+		font-weight: 400;
+		letter-spacing: normal;
+		padding-top: 0;
+	}
+}
+
+.team-member-social-links {
+	@include fs(22px);
+	@extend %menu;
+	@extend %menu-horizontal;
+
+	@include backface-visibility(hidden);
+	@include perspective(1000px);
+	margin: 0;
+	border: 0 !important;
+
+	& > li.team-member-social-link {
+		@include rem(margin-right, $unit/2);
+
+		&:before {
+			content: "";
+			display: none;
+		}
+
+		.social-link {
+			display: block;
+			width: 1em;
+			text-align: center;
+			position: relative;
+			display: block;
+			border: 0;
+		}
+
+		a {
+			display: block;
+			position: relative;
+			@include backface-visibility(hidden);
+			@include transition(all 0.2s);
+			color:$grayLight;
+
+			&:hover {
+				text-decoration: none;
+				color:$grayDark;
+			}
+		}
+	}
+
+	@include media(from lap) {
+		& { 
+			@include opacity(0);
+			&, & > li.team-member-social-link a {
+				color:$white;
+			}
+		}
+	}
+}

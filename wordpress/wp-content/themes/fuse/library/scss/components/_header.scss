@@ -1,0 +1,221 @@
+.wrapper-header {
+	// position: fixed;
+	background: $grayDarkest;
+	top: 0; left: 0;
+	z-index: 400;
+	width: 100%;
+	overflow: visible !important;
+
+	.admin-bar & {
+		margin-top:28px;
+	}
+}
+
+.wrapper-header-big {
+	position: absolute;
+	@include rem(padding-top, 35px);
+	@include rem(padding-bottom, 35px);
+}
+
+#page {
+	@include rem(padding-top, 175px);
+}
+
+.header-transparent {
+	&.admin-bar {
+		.wrapper-header-big, .wrapper-header-small {
+			margin-top:28px;
+		}
+	}
+	
+	#page {
+		padding-top: 0;
+	}
+
+	.wrapper-header-big {
+		background: none;
+		position: absolute;
+		z-index: 9998;
+		
+		.site-header {
+			@include rem(margin-top, 30px);
+		}
+	}
+
+}
+
+.site-header {
+	@extend %clearfix;
+}
+
+.site-branding {
+	float: left;
+	color: white;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 0.125em;
+	@include fs(60px);
+
+	a {
+		color: white;
+		outline:none;
+	}
+
+}
+
+.site-home-link {
+	display: block;
+	border: 0;
+
+	img {
+		display: block;
+	}
+}
+
+.site-navigation {
+	float: right;
+}
+
+.site-branding, .site-navigation {
+	display: table;
+}
+
+.site-home-link,
+.site-mainmenu > li > a {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.site-home-link, 
+.site-mainmenu > li > a {
+	@include rem(height, 105px);
+	@include transition(all .4s bezier(easeInOutQuart));
+}
+
+.site-header_bg {
+	position: absolute;
+	top: 0; left: 0;
+	display: block;
+	width: 100%;
+	background-color: $grayDarker;
+	@include opacity(0);
+
+	.l-header-sticky & {
+		@include opacity(1);
+	}
+}
+
+//Small Header
+.wrapper-header-small {
+	position: absolute;
+	z-index: 9998;
+	@include rem(top, -80px);
+	// background-color: $grayDarkest;
+	@extend %easeInOutQuart;
+	padding-right: 0;
+	overflow: hidden;
+	pointer-events: none;
+
+	@include media(from lap) {
+		position: fixed;
+	}
+
+	&.header-fixed-none {
+		@include media(from lap) {
+			display: none !important; 
+		}
+	}
+
+	&.is-visible {
+		top: 0;
+		overflow: visible;
+		pointer-events: auto;
+	}
+
+	.site-home-link,
+	.site-branding,
+	.site-mainmenu > li > a {
+		@include rem(height, 80px);
+	}
+
+	.site-branding img {
+		max-height: 80px;
+	}
+
+	.site-mainmenu {
+		ul.sub-menu {
+			top:100%;
+		}
+	}
+}
+
+.site-mainmenu {
+	float: left;
+}
+
+// Searchform from Small Header
+.header_search-form {
+	@include rem(width, 300px);
+	float: left;
+	margin-right:-150px;
+	@include transition(all, 0.3s);
+
+	.lt-ie9 & {
+		display: none;
+	}
+
+	.btn, .field {
+		@include rem(height, 80px);
+		@include rem(padding-left, $unit*1.3);
+		@include rem(padding-right, $unit*1.3);
+	}
+	&.is-visible {
+		margin-right:0;
+		#searchform .field {
+			@include rem(width, 250px);
+		}
+	}
+
+	#searchform {
+		@include rem(width, 300px);
+		position: relative;
+		overflow: visible;
+		@extend %accentBgColor;
+
+		.field {
+			@include fs(16px);
+			font-weight: 700;
+			color:$white;
+
+			@include rem(width, 155px);
+			@extend %accentBgColor;
+			
+			position: relative;
+			top: 0; right: 0;
+			margin-right: 0;
+			
+			@extend %easeInOutQuad;
+			outline: 0;
+			
+			@include transition(all, 0.15s);
+		}
+
+		.btn {
+			position: absolute;
+			top: 0; right: 0;
+			@include border-radius(0);
+			@include fs(22px);
+			&:hover {
+				color:$grayDark;
+			}
+		}
+
+		@include placeholder() {
+			text-transform: uppercase;
+			color: $white;
+			font-weight: 700;
+			letter-spacing: 3px;
+
+		}
+	}
+}

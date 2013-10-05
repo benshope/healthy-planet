@@ -1,0 +1,103 @@
+.swrapper-body {
+
+	ul {
+		padding-left: 0;
+		list-style: none;
+
+		li {
+			& {
+				@include rem(margin, $unit/2 0);
+			}
+			&:before {
+				content: "- ";
+			}	
+		}
+	}
+}
+//Headings
+.alpha {
+	line-height: 1.2;
+	text-transform: uppercase;
+	// font-weight: 800;
+	letter-spacing: 4px;
+}
+.beta {
+	text-transform: uppercase;
+	font-weight: 800;
+	letter-spacing: 3px;
+}
+.gama {
+	text-transform: uppercase;
+	font-weight: 800;
+	letter-spacing: 3px;
+}
+
+
+//Bigger Stuff
+.headings-bigger { 
+	.alpha   {@include fs(60px); line-height:1.2; letter-spacing:8px;}
+	.beta    {@include fs(48px); letter-spacing:8px;}
+	.gama    {@include fs(36px)}
+	.delta   {@include fs(28px)}
+	.epsylon {@include fs(21px)}
+	.zeta    {@include fs(18px)}
+
+	@include media(to 1445px) {
+		.alpha   {@include fs(55px)}
+		.beta    {@include fs(44px)}
+		.gama    {@include fs(31px)}
+		.delta   {@include fs(24px)}
+		.epsylon {@include fs(19px)}
+		.zeta    {@include fs(16px)}
+	}
+
+	@include media(to hand) {
+		@include rem(font-size, 16px);
+		.alpha   {@include fs(38px)}
+		.beta    {@include fs(28px)}
+		.gama    {@include fs(24px)}
+		.delta   {@include fs(21px)}
+		.epsylon {@include fs(18px)}
+		.zeta    {@include fs(16px)}		
+	}
+}
+
+
+.content-bigger {
+	@include rem(font-size, 21px);
+
+	//Headings Bigger too
+	.alpha   {@include fs(100px); line-height:1.2; letter-spacing:8px;}
+	.beta    {@include fs(52px); letter-spacing:4px;}
+	.gama    {@include fs(36px)} 
+	.delta   {@include fs(28px)}
+	.epsylon {@include fs(21px)}
+	.zeta    {@include fs(18px)}
+
+	@include media(to 1445px) {
+		@include rem(font-size, 18px);
+		.alpha   {@include fs(70px)}
+		.beta    {@include fs(39px)}
+		.gama    {@include fs(28px)} 
+		.delta   {@include fs(21px)}
+		.epsylon {@include fs(19px)}
+		.zeta    {@include fs(16px)}
+	}
+
+	@include media(to hand) {
+		@include rem(font-size, 16px);
+		.alpha   {@include fs(38px)}
+		.beta    {@include fs(28px)}
+		.gama    {@include fs(24px)}
+		.delta   {@include fs(21px)}
+		.epsylon {@include fs(18px)}
+		.zeta    {@include fs(16px)}		
+	}
+}
+
+//Lists
+ul {
+	li {
+
+	}
+}
