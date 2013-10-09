@@ -14,7 +14,7 @@
 <?php
 if( (is_archive()) || (is_author()) || (is_category()) || (is_home()) || (is_single()) || (is_tag()) || (is_search()) ) {
 	if ( is_active_sidebar( 'sidebar1' ) ) : ?>
-	<div id="sidebar1" class="side side-content widget-area <?php echo $template; if ($template == 'l-sidebar-left') echo ' pull8'; ?>" role="complementary">
+	<div id="sidebar1" class="side side-content widget-area" role="complementary">
    		<div class="block-inner block-inner_last"><?php dynamic_sidebar( 'sidebar1' ); ?></div>
 	</div>
 <?php endif;

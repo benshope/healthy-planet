@@ -11,9 +11,9 @@
 **************************************************************/
 
 // Constants for the theme name, folder and remote XML url
-define( 'NOTIFIER_THEME_NAME', 'Fuse' ); // The theme name
-define( 'NOTIFIER_THEME_SHORTNAME', 'fuse' ); // The theme name
-define( 'NOTIFIER_XML_FILE', 'http://pixelgrade.com/updates/fuse.xml' ); // The remote notifier XML file containing the latest version of the theme and changelog
+define( 'NOTIFIER_THEME_NAME', WPGRADE_THEMENAME ); // The theme name
+define( 'NOTIFIER_THEME_SHORTNAME', WPGRADE_SHORTNAME ); // The theme name
+define( 'NOTIFIER_XML_FILE', 'http://pixelgrade.com/updates/'. WPGRADE_SHORTNAME .'.xml' ); // The remote notifier XML file containing the latest version of the theme and changelog
 define( 'NOTIFIER_CACHE_INTERVAL', 10800 ); // The time interval for the remote XML cache in the database (21600 seconds = 6 hours)
 define ('WPGRADE_UPDATE_PAGE_NAME', 'theme-update-notifier');
 

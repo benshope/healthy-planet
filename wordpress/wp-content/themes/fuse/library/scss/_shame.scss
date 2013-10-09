@@ -450,6 +450,18 @@ pre {
 	overflow-wrap: break-word;
 }
 
+#gmap{
+    img{
+        max-width: none !important;
+    }
+
+    .infoBox{
+        width: 1px !important;
+        height: 1px !important;
+    }
+}
+
+
 .lp-image-link {
 
 	@include media(from lap) {

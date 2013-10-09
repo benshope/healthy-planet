@@ -3,6 +3,6 @@
 	if( !empty( $video_embed ) ) {
 		echo '<div class="video-wrap">' . stripslashes(htmlspecialchars_decode($video_embed)) . '</div>';
 	} else {
-		wpGrade_video_selfhosted($post->ID);
+		echo '<div class="video-wrap">'; wpGrade_video_selfhosted($post->ID); echo '</div>';
 	} ?>
 </div>

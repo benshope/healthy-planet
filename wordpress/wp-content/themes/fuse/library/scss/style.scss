@@ -14,7 +14,7 @@ $fontAwesomePath: "fonts";
 @import "variables";
 @import "settings";
 @import "theme";
-@import "vendor/greedy/index";  
+@import "vendor/greedy/index"; 
 
 @mixin font-style($style) {
 	@if $style == italic {
@@ -23,7 +23,7 @@ $fontAwesomePath: "fonts";
 		letter-spacing: .09em;
 	} @else { 
 		font-family: "Raleway", sans-serif; 
-		font-style: italic;  
+		font-style: italic;
 	} 
 }
 
@@ -32,7 +32,7 @@ $fontAwesomePath: "fonts";
 	@include background-size($ratio * 1rem $ratio * 1rem);
 } 
 
-html {
+html { 
 	font-size:90%;
 } 
 body { 

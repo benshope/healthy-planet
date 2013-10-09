@@ -4,13 +4,13 @@ if ( isset($_GET["color"]) ){
     $main_color = '#'.$_GET["color"]; ?>
     .post.sticky .entry-title a, .site-mainmenu li:hover > a, .site-mainmenu > li.current-menu-parent > a, .site-mainmenu > li.current_page_item > a, .site-mainmenu > li.current-menu-item > a,
 	.site-mainmenu > li .current-menu-item > a, .site-mainmenu > li.current_page_parent > a, .icon-twitter_footer, .widget_categories > ul > li a:hover, .nav-btn i, .portfolio-item_cat-link:hover, .filter-by_list a:hover, .portfolio_category_list a:hover, .previous-project-link a:hover, .next-project-link a:hover, .load_more a:hover, .previous-project-link span, .next-project-link span, .load_more span, .post-footer_meta a:hover, .comment.bypostauthor .comment-author, .pingback.bypostauthor .comment-author, .trackback.bypostauthor .comment-author, .block-dark a, .tab-titles-list-item.active a, .tab-titles-list-item a:hover, i.shc.big:hover, a,
-	a:hover > i.shc, .portfolio_category_list li a:hover, .portfolio_category_list li.current-item a, .portfolio-item_title a:hover, .filter-by_list li a:hover, .filter-by_list li.current-item a, p.radio .wpcf7-radio input[type="radio"]:checked ~ span
+	a:hover > i.shc, .portfolio_category_list li a:hover, .portfolio_category_list li.current-item a, .portfolio-item_title a:hover, .filter-by_list li a:hover, .filter-by_list li.current-item a, p.radio .wpcf7-radio input[type="radio"]:checked ~ span, .wpcf7-arrow:hover .wpcf7-submit
 	{
       color: <?php echo $main_color; ?>; }
-    .header_search-form #searchform, .header_search-form #searchform .field, .side-footer_twitter, .side-featuredworks, .homepage-slider .flex-control-paging > li > a.flex-active, .homepage-slider_slide-content .btn, .nav-filler, .gallery_format_slider .flex-direction-nav a:hover, .block-color, .progressbar-progress, .progressbar-tooltip:after, .btn:hover, #comment-submit:hover, .btn-primary.btn, .btn-primary#comment-submit, .mejs-container .mejs-controls .mejs-time-rail .mejs-time-current,
+    .header_search-form #searchform, .header_search-form #searchform .field, .side-footer_twitter, .side-featuredworks, .homepage-slider .flex-control-paging > li > a.flex-active, .homepage-slider_slide-content .btn, .nav-filler, .gallery_format_slider .flex-direction-nav a:hover, .block.block-color, .progressbar-progress, .progressbar-tooltip:after, .btn:hover, #comment-submit:hover, .btn-primary.btn, .btn-primary#comment-submit, .mejs-container .mejs-controls .mejs-time-rail .mejs-time-current,
 	.mejs-container .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current {
       background-color: <?php echo $main_color; ?>; }
-    .site-mainmenu > li.menu-parent-item:hover > a:after, .site-mainmenu > li ul.sub-menu li.menu-parent-item:hover a:after {
+    .site-mainmenu > li.menu-parent-item:hover > a:after, .site-mainmenu > li ul.sub-menu li.menu-parent-item:hover a:after, body .contact-info .pin_ring {
       border-color: <?php echo $main_color; ?>; }
     .side-footer_twitter .block-inner:before, .side-featuredworks .block-inner:before, .homepage-slider_slide-content .btn:after, .block-color .arrow-bottom:before, .previous-project-link a:before, .next-project-link a:after, .team-member-header, .block-light .shc-arrow:before, .block-light .shc-arrow:after {
       border-top-color: <?php echo $main_color; ?>; }

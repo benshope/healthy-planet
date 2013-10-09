@@ -36,6 +36,10 @@ body > .parallax-container {
 
 .featured-image-container {
 	overflow: hidden;
+
+    @include media(to hand) {
+        min-height: 0 !important;
+    }
 }
 
 .featured-image-container-wrapper {
