@@ -7,19 +7,19 @@ handlers:
 - url: /wp-content/themes/fuse/library/css/custom.css.php
   script: wordpress/wp-content/themes/fuse/library/css/custom.css.php
 
-- url: /(.*\.(htm$|html$|css$|js$|ttf$|jpg$|jpeg$|otf$))
+- url: /(.*\.(htm$|html$|css$|js$|ttf$|jpg$|jpeg$|otf$|wof$|svg$))
   static_files: wordpress/\1
-  upload: wordpress/(.*\.(htm$|html$|css$|js$|ttf$|jpg$|jpeg$|otf$))
+  upload: wordpress/(.*\.(htm$|html$|css$|js$|ttf$|jpg$|jpeg$|otf$|wof$|svg$))
   application_readable: true
 
-- url: /wp-content/(.*\.(ico$|jpg$|png$|gif$|ttf$|jpeg$|htm$|html$|css$|js$|otf$))
+- url: /wp-content/(.*\.(ico$|jpg$|png$|gif$|ttf$|jpeg$|htm$|html$|css$|js$|otf$|wof$|svg$))
   static_files: wordpress/wp-content/\1
-  upload: wordpress/wp-content/(.*\.(ico$|jpg$|png$|gif$|ttf$|jpeg$|htm$|html$|css$|js$|otf$))
+  upload: wordpress/wp-content/(.*\.(ico$|jpg$|png$|gif$|ttf$|jpeg$|htm$|html$|css$|js$|otf$|wof$|svg$))
   application_readable: true
 
-- url: /(.*\.(ico$|jpg$|png$|gif$|ttf$|jpeg$|htm$|html$|css$|js$|otf$))
+- url: /(.*\.(ico$|jpg$|png$|gif$|ttf$|jpeg$|htm$|html$|css$|js$|otf$|wof$|svg$))
   static_files: wordpress/\1
-  upload: wordpress/(.*\.(ico$|jpg$|png$|gif$|ttf$|jpeg$|htm$|html$|css$|js$|otf$))
+  upload: wordpress/(.*\.(ico$|jpg$|png$|gif$|ttf$|jpeg$|htm$|html$|css$|js$|otf$|wof$|svg$))
 
 - url: /wp-admin/(.+)
   script: wordpress/wp-admin/\1
